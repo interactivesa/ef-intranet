@@ -1,34 +1,36 @@
 
 @font-face {
-    font-family: "font-Reg";
-    // src: url("../fonts/IBMPlexSansArabic-Regular.ttf");
-    src: url("../fonts/AktivGroteskRegular.otf");
+    font-family: "font-black";
+    src: url("../fonts/Aktiv\ Grotesk\ Black.otf");
   }
 
   @font-face {
     font-family: "font-Bold";
-    // src: url("../fonts/IBMPlexSansArabic-Bold.ttf");
-    src: url("../fonts/AktivGroteskBold.otf");
+    src: url("../fonts/Aktiv\ Grotesk\ Bold.otf");
   }
 
   @font-face {
-    font-family: "font-Med";
-    // src: url("../fonts/IBMPlexSansArabic-Medium.ttf");
-    src: url("../fonts/AktivGroteskMedium.otf");
+    font-family: "font-hair";
+    src: url("../fonts/Aktiv\ Grotesk\ Hair.otf");
   }
-  // @font-face {
-  //   font-family: "font-Li";
-  //   // src: url("../fonts/IBMPlexSansArabic-Light.ttf");
-  //   src: url("../fonts/Elm-Light.woff2");
-  // }
-  // @font-face {
-  //   font-family: "font-XLi";
-  //   // src: url("../fonts/IBMPlexSansArabic-ExtraLight.ttf");
-  //   src: url("../fonts/Elm-Light.woff2");
-  // }
+  @font-face {
+    font-family: "font-medium";
+    src: url("../fonts/Aktiv\ Grotesk\ Medium.otf");
+  }
+  @font-face {
+    font-family: "font-regular";
+    src: url("../fonts/Aktiv\ Grotesk\ Regular.otf");
+  }
 
-  // @font-face {
-  //   font-family: "font-SimiBold";
-  //   // src: url("../fonts/IBMPlexSansArabic-SemiBold.ttf");
-  //   src: url("../fonts/Elm-Medium.woff2");
-  // }
+  @font-face {
+    font-family: "font-SimiBold";
+    src: url("../fonts/Aktiv\ Grotesk\ SemiBold.otf");
+  }
+  @font-face {
+    font-family: "font-thin";
+    src: url("../fonts/Aktiv\ Grotesk\ Thin.otf");
+  }
+  @font-face {
+    font-family: "font-xbold";
+    src: url("../fonts/Aktiv\ Grotesk\ XBold.otf");
+  }
