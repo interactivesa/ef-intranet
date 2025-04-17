@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="صندوق البيئة السعودي - دعم المشاريع البيئية المستدامة في المملكة العربية السعودية. نعمل على حماية البيئة، الحفاظ على الموارد الطبيعية، وتمكين التنمية الخضراء وفق رؤية 2030 | Saudi Environment Fund - Supporting sustainable environmental projects, preserving natural resources, and promoting green development in line with Saudi Vision 2030."
+    />
+    <meta
+      name="keywords"
+      content="صندوق البيئة السعودي, البيئة السعودية, حماية البيئة, الاستدامة, رؤية 2030, مشاريع بيئية, التنمية الخضراء, الموارد الطبيعية, الطاقة المتجددة, المملكة العربية السعودية, Saudi Environment Fund, Saudi Arabia environment, environmental protection, sustainability, Vision 2030, green projects, natural resources, renewable energy, KSA"
+    />
+    <meta name="author" content="Farah-Sinjlawi, info@farahcoders.com" />
+    <title>صندوق البيئة السعودي</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/EF-logo/logo-shape-white.svg"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css" />
+    <!--  swiper CSS -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/styleRTL.css" />
+  </head>
+
+  <body>
+    <!-- side navbar -->
+    <nav class="sidenav" id="sidenav">
+      <div class="sidenav-header">
+        <div class="logo-container">
+          <img
+            src="../assets/images/EF-logo/Logo.svg"
+            alt="Logo"
+            class="logo default-logo"
+          />
+          <img
+            src="../assets/images/EF-logo/logo-shape-white.svg"
+            alt="Collapsed Logo"
+            class="logo collapsed-logo"
+          />
+        </div>
+        <div class="collapse-btn" id="collapseBtn">
+          <img
+            src="../assets/images/icons/sidebar/Action-Arrow-border.svg"
+            alt="Toggle"
+            class="toggle-icon"
+          />
+        </div>
+      </div>
+
+      <div class="user-card">
+        <div class="profile-card default-user-card">
+          <div class="middle-section"></div>
+          <div class="top-section left"></div>
+          <div class="top-section right"></div>
+
+          <div class="content">
+            <img
+              src="../assets/images/icons/sidebar/user.svg"
+              class="user-img"
+              alt="user-img"
+            />
+            <div class="user-info">
+              <h3>فاطمة الزهراء عبد الرحمن</h3>
+              <p>مسئول أول مبيعات</p>
+              <p>الإدارة التسويقية</p>
+              <p>259856</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../assets/images/icons/sidebar/collapse-user-profile.svg"
+          class="collapsed-user-icon"
+          alt="collapse-user-profile"
+        />
+      </div>
+
+      <div class="time-info">
+        <div class="time-item">
+          <img
+            src="../assets/images/icons/sidebar/login-time.svg"
+            alt="login-time"
+          />
+          <span>09:00 ص</span>
+          <span>02 سبتمبر 2024</span>
+        </div>
+      </div>
+
+      <ul class="menu-list">
+        <li class="active">
+          <img
+            src="../assets/images/icons/sidebar/home-hashtag.svg"
+            class="menu-icon"
+          />
+          <span>الرئيسية</span>
+        </li>
+        <li>
+          <img
+            src="../assets/images/icons/sidebar/dashboard.svg"
+            class="menu-icon"
+          />
+          <span>لوحة التحكم</span>
+        </li>
+        <li>
+          <img
+            src="../assets/images/icons/sidebar/setting.svg"
+            class="menu-icon"
+          />
+          <span>نظام الموارد</span>
+        </li>
+        <li>
+          <img
+            src="../assets/images/icons/sidebar/like.svg"
+            class="menu-icon"
+          />
+          <span>اشعار تقدير</span>
+        </li>
+        <li>
+          <img
+            src="../assets/images/icons/sidebar/profile-2user.svg"
+            class="menu-icon"
+          />
+          <span>فريقي</span>
+        </li>
+        <li>
+          <img
+            src="../assets/images/icons/sidebar/document-normal.svg"
+            class="menu-icon"
+          />
+          <span>ملفات مشاركة</span>
+        </li>
+      </ul>
+
+      <div class="qr-section">
+        <!-- onboarding -->
+        <img
+          src="../assets/images/icons/sidebar/onBorading.svg"
+          class="onboarding-img"
+          id="onboardingTrigger"
+        />
+
+        <div class="onboarding-popup">
+          <div class="popup-content">
+            <button class="close-btn">&times;</button>
+            <h2 class="popup-title">
+              حيَّاك، فَاطِمة .. سُعداء بانضمامك إلينا
+            </h2>
+            <p class="popup-text">
+              مرحبًا بك، في صندوق البيئة! <br />
+              نحن سعداء بانضمامك إلى فريقنا ونتطلع إلى العمل معك لتحقيق أهدافنا
+              البيئية المشتركة. إليك خطوات تأهيلك لتكون جزءً فعالاً في فريقنا:
+            </p>
+
+            <!-- Stepper -->
+            <div class="stepper">
+              <div class="step active">
+                01
+                <div class="step-label">
+                  الخطوة الأولى<br /><span>التعريف بالصندوق</span>
+                </div>
+              </div>
+              <div class="step-line"></div>
+              <div class="step">
+                02
+                <div class="step-label">
+                  الخطوة الثانية<br /><span>اعداد الملف الشخصي</span>
+                </div>
+              </div>
+              <div class="step-line"></div>
+              <div class="step">
+                03
+                <div class="step-label">
+                  الخطوة الثالثة<br /><span>مراجعة السياسات</span>
+                </div>
+              </div>
+              <div class="step-line"></div>
+              <div class="step">
+                04
+                <div class="step-label">
+                  الخطوة الرابعة<br /><span>التدريب الأولي</span>
+                </div>
+              </div>
+              <div class="step-line"></div>
+              <div class="step">
+                05
+                <div class="step-label">
+                  الخطوة الخامسة<br /><span>الانضمام الرسمي</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content-step active" data-step="1">
+              <h3>1. تعرف على الصندوق:</h3>
+              <ul>
+                <li>عرض تقديمي عن الصندوق وانجازاته</li>
+                <li>شرح رؤية الصندوق ورسالته</li>
+              </ul>
+              <h3>2. جولة في المكتب:</h3>
+              <ul>
+                <li>جولة تعريفية في المكتب للتعرف على الاقسام المختلفة</li>
+                <li>تقديم الموظفين الرئيسين في كل قسم</li>
+              </ul>
+              <h3>3. مراجعة السياسات والاجراءات:</h3>
+              <ul>
+                <li>شرح السياسات الداخلية والاجراءات المتبعة</li>
+                <li>الاطلاع على دليل الموظف</li>
+              </ul>
+            </div>
+
+            <div class="content-step" data-step="2">
+              <!-- content -->
+            </div>
+
+            <div class="content-step" data-step="3">
+              <!-- content -->
+            </div>
+
+            <div class="content-step" data-step="4">
+              <!-- content -->
+            </div>
+            <div class="content-step" data-step="5">
+              <!-- content -->
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="navigation-btns">
+              <button class="prev-btn">السابق</button>
+              <button class="next-btn">التالي</button>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../assets/images/icons/sidebar/QR.svg"
+          alt="QR Code"
+          class="qr-img"
+        />
+        <button class="app-btn">تطبيق الخدمة الذاتية</button>
+      </div>
+    </nav>
+
+    <!-- main body -->
+    <main class="main-content">
+      <!-- Right Body -->
+      <div class="right-body">
+        <!-- Top Bar -->
+        <div class="top-bar" id="topBar">
+          <!-- left-section -->
+          <div class="left-section">
+            <img
+              src="../assets/images/icons/right-body/clock.svg"
+              alt="clock"
+              class="icon"
+            />
+            <span class="time">9:42:33 ص</span>
+          </div>
+
+          <!-- center-section -->
+          <div class="center-section">
+            <div class="prayer-time">
+              <img
+                src="../assets/images/icons/right-body/mosque.svg"
+                alt="mosque"
+                class="icon"
+              />
+              <span>صلاه الظهر 11:53 ص</span>
+            </div>
+            <div class="weather">
+              <img
+                src="../assets/images/icons/right-body/sun.svg"
+                alt="sun"
+                class="icon"
+              />
+              <span>24 مشمس</span>
+            </div>
+          </div>
+
+          <!-- right-section -->
+          <div class="right-section">
+            <img
+              src="../assets/images/icons/right-body/search.svg"
+              alt="search"
+              class="icon"
+            />
+            <img
+              src="../assets/images/icons/right-body/notification.svg"
+              alt="notification"
+              class="icon"
+            />
+            <div class="mode-toggle" id="modeToggle">
+              <div class="toggle-circle"></div>
+            </div>
+          </div>
+        </div>
+        <!-- carousel -->
+        <div class="swiper-carousel">
+          <!-- Navbar -->
+          <nav
+            class="navbar navbar-expand-lg position-absolute start-0 top-0 z-3 w-100"
+          >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse justify-content-start"
+                id="mainNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown me-4">
+                    <a
+                      class="nav-link custom-dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      data-bs-trigger="hover"
+                    >
+                      <span>عن الصندوق</span>
+                      <img
+                        src="../assets/images/icons/right-body/down-arrow.svg"
+                        class="dropdown-arrow"
+                        alt="arrow"
+                      />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">عن الصندوق</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">الهيكل التنظيمي</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">الرؤية والرسالة</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a
+                      class="nav-link custom-dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      data-bs-trigger="hover"
+                    >
+                      <span>مركز المعرفة</span>
+                      <img
+                        src="../assets/images/icons/right-body/down-arrow.svg"
+                        class="dropdown-arrow"
+                        alt="arrow"
+                      />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">عن الصندوق</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">الهيكل التنظيمي</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">الرؤية والرسالة</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a
+                      class="nav-link custom-dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      data-bs-trigger="hover"
+                    >
+                      <span>المركز الاعلامي</span>
+                      <img
+                        src="../assets/images/icons/right-body/down-arrow.svg"
+                        class="dropdown-arrow"
+                        alt="arrow"
+                      />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">عن الصندوق</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">الهيكل التنظيمي</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">الرؤية والرسالة</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link text-white" href="#"
+                      >الانظمة الالكترونية</a
+                    >
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link text-white" href="#">دليل الموظفين</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Swiper Container -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="slide-overlay"></div>
+                <video class="slide-media" autoplay muted loop>
+                  <source
+                    src="../assets/images/icons/right-body/slide-1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="slide-overlay"></div>
+                <img
+                  src="../assets/images/icons/right-body/slide-2.jpg"
+                  class="slide-media"
+                  alt="Slide 2"
+                />
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="slide-overlay"></div>
+                <img
+                  src="../assets/images/icons/right-body/slide-3.jpg"
+                  class="slide-media"
+                  alt="Slide 3"
+                />
+              </div>
+            </div>
+
+            <!-- Caption -->
+            <div class="static-caption">
+              <div class="caption-content">
+                <h3>حماية البيئة والحد من التلوث بمختلف انواعه</h3>
+                <p>
+                  نعمل معاً لحماية بيئتنا والحد من التلوث بمختلف انواعه. لنلتزم
+                  بتقليل النفايات، واعتماد الطاقات النظيفة، وتشجيع السلوكيات
+                  المستدامة.
+                </p>
+                <a href="#" class="discover-link btn">اكتشف المزيد</a>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- Electronic systems -->
+        <div class="new-systems-section">
+          <div class="section-header">
+            <h2 class="section-title">الأنظمة الالكترونية</h2>
+            <div class="view-all">
+              <span>عرض الكل</span>
+              <img
+                src="../assets/images/icons/right-body/Arrow-left.svg"
+                alt="arrow"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/monitor.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>إدارة الموارد المؤسسية (ERP)</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/like-dislike.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>نظام تقييم اداء الموظفين</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/music-play.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>منصة الدعم التقني</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/message.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>مراسلات</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/monitor.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>إدارة الموارد المؤسسية (ERP)</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/like-dislike.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>نظام تقييم اداء الموظفين</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/music-play.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>منصة الدعم التقني</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="system-card">
+                  <div class="rating-container">
+                    <div class="rating-star">☆</div>
+                  </div>
+                  <img
+                    src="../assets/images/icons/right-body/message.svg"
+                    class="system-icon"
+                    alt="ERP"
+                  />
+                  <h3>مراسلات</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="controls-container">
+              <div class="swiper-pagination"></div>
+              <div class="nav-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- new-updates-section -->
+        <div class="new-updates-section">
+          <div class="section-header">
+            <h2 class="section-title">آخر التحديثات</h2>
+            <div class="view-all">
+              <span>عرض الكل</span>
+              <img
+                src="../assets/images/icons/right-body/Arrow-left.svg"
+                alt="arrow"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="content-container">
+            <div class="tabs-container">
+              <div class="tab active" data-tab="all">الكل</div>
+              <div class="tab" data-tab="news">
+                <span class="event-count">6</span>
+                <span>الأخبار</span>
+              </div>
+              <div class="tab" data-tab="announcements">التعميمات</div>
+              <div class="tab" data-tab="events">
+                <span class="event-count">12</span>
+                مناسبات اجتماعية
+              </div>
+              <div class="tab" data-tab="new-employees">موظفين جدد</div>
+            </div>
+
+            <div class="swiper-container">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- all -->
+                  <div class="swiper-slide active" data-tab="all">
+                    <div class="images-container"></div>
+                  </div>
+
+                  <!-- news  -->
+                  <div class="swiper-slide" data-tab="news">
+                    <div class="images-container">
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="News 1"
+                      />
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="News 2"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- generalization -->
+                  <div class="swiper-slide" data-tab="announcements">
+                    <div class="images-container">
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Announcement 1"
+                      />
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Announcement 2"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- events -->
+                  <div class="swiper-slide" data-tab="events">
+                    <div class="images-container">
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Event 1"
+                      />
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Event 2"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- new employee  -->
+                  <div class="swiper-slide" data-tab="new-employees">
+                    <div class="images-container">
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Employee 1"
+                      />
+                      <img
+                        src="../assets/images/icons/right-body/latest-news-2.svg"
+                        class="update-image"
+                        alt="Employee 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="controls-container">
+                <div class="swiper-pagination"></div>
+                <div class="nav-buttons">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- offers -->
+        <div class="new-systems-section">
+          <div class="section-header">
+            <h2 class="section-title">العروض والخصومات</h2>
+            <div class="view-all">
+              <span>عرض الكل</span>
+              <img
+                src="../assets/images/icons/right-body/Arrow-left.svg"
+                alt="arrow"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+          <img
+            src="../assets/images/icons/right-body/Offer.svg"
+            alt="Offer"
+            class="offer-image"
+          />
+        </div>
+        <!-- library and cards-->
+        <div class="dual-sections">
+          <!-- library -->
+          <div class="files-section">
+            <div class="section-header">
+              <h2 class="section-title">العروض والخصومات</h2>
+              <div class="view-all">
+                <span>عرض الكل</span>
+                <img
+                  src="../assets/images/icons/right-body/Arrow-left.svg"
+                  alt="arrow"
+                  class="arrow-icon"
+                />
+              </div>
+            </div>
+
+            <div class="files-list">
+              <div class="file-item">
+                <img
+                  src="../assets/images/icons/right-body/document.svg"
+                  alt="template"
+                  class="file-icon"
+                />
+                <span class="file-category">القوالب</span>
+                <span class="file-count">25 ملف</span>
+              </div>
+              <!-- كرر 3 مرات -->
+              <div class="file-item">
+                <img
+                  src="../assets/images/icons/right-body/document.svg"
+                  alt="template"
+                  class="file-icon"
+                />
+                <span class="file-category">السياسات</span>
+                <span class="file-count">25 ملف</span>
+              </div>
+              <div class="file-item">
+                <img
+                  src="../assets/images/icons/right-body/document.svg"
+                  alt="template"
+                  class="file-icon"
+                />
+                <span class="file-category">الادلة</span>
+                <span class="file-count">25 ملف</span>
+              </div>
+              <div class="file-item">
+                <img
+                  src="../assets/images/icons/right-body/document.svg"
+                  alt="template"
+                  class="file-icon"
+                />
+                <span class="file-category">النماذج</span>
+                <span class="file-count">25 ملف</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- cards -->
+          <div class="notification-section">
+            <div class="main-notification" id="sendAppreciation">
+              <img
+                src="../assets/images/icons/right-body/certificate.svg"
+                alt="certificate"
+              />
+              <h3>إرسال إشعار تقدير</h3>
+            </div>
+
+            <!-- Popup -->
+            <div class="appreciation-modal" id="appreciationModal">
+              <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 class="modal-title">إشعار تقدير</h2>
+
+                <div class="notification-tabs">
+                  <div class="tab active" data-tab="send">
+                    إرسال إشعار تقدير
+                  </div>
+                  <div class="tab" data-tab="received">
+                    الإشعارات المستلمة
+                    <span class="notification-badge">5</span>
+                  </div>
+                </div>
+
+                <!-- Send Tab Content -->
+                <div class="tab-content active" data-tab="send">
+                  <div class="search-container">
+                    <img
+                      src="../assets/images/icons/right-body/appre-search.svg"
+                      class="search-icon"
+                      alt="search"
+                    />
+                    <input
+                      type="text"
+                      placeholder="ادخل الأحرف الأولى..."
+                      class="search-input"
+                    />
+                  </div>
+
+                  <div class="quick-buttons">
+                    <button class="quick-btn">
+                      <img
+                        src="../assets/images/icons/right-body/appre-price.svg"
+                        alt="heart"
+                      />
+                      مبارك لكم!!
+                    </button>
+                    <button class="quick-btn">
+                      <img
+                        src="../assets/images/icons/right-body/appre-feelings.svg"
+                        alt="star"
+                      />
+                      شكراً لكم!!
+                    </button>
+                    <button class="quick-btn">
+                      <img
+                        src="../assets/images/icons/right-body/appre-gift.svg"
+                        alt="trophy"
+                      />
+                      هائل جداً!!
+                    </button>
+                    <button class="quick-btn">
+                      <img
+                        src="../assets/images/icons/right-body/appre-like.svg"
+                        alt="flag"
+                      />
+                      عظيم !!
+                    </button>
+                  </div>
+
+                  <div class="message-container">
+                    <textarea
+                      class="message-input"
+                      placeholder="اكتب رسالتك هنا..."
+                    ></textarea>
+                  </div>
+
+                  <button class="send-btn">إرسال</button>
+                </div>
+
+                <!-- Received Tab Content -->
+                <div class="tab-content" data-tab="received">
+                  <div class="notification-list">
+                    <div class="notification-item">
+                      <div class="notification-icon">🎉</div>
+                      <div class="notification-text">
+                        <h4>تهنئة من المدير</h4>
+                        <p>ممتاز! لقد تجاوزت التوقعات...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-boxes">
+              <div class="info-box">
+                <img
+                  src="../assets/images/icons/right-body/photos.svg"
+                  alt="photos"
+                />
+                <span>مكتبة الصور</span>
+              </div>
+              <div class="info-box">
+                <img
+                  src="../assets/images/icons/right-body/videos.svg"
+                  alt="videos"
+                />
+                <span>مكتبة الفيديو</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- dual-sections -->
+        <div class="dual-sections">
+          <!-- complaints-section -->
+          <div class="complaints-section">
+            <div class="complaint-card">
+              <img
+                src="../assets/images/icons/right-body/suggestions.svg"
+                alt="suggestions"
+                class="complaint-image"
+              />
+              <button class="complaint-btn">للشكاوي والمقترحات</button>
+
+              <div class="complaint-popup">
+                <div class="popup-content">
+                  <button class="close-btn">&times;</button>
+                  <h2 class="popup-title">للشكاوى والمقترحات</h2>
+
+                  <form class="complaint-form">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-input"
+                        placeholder="عنوان الشكوى أو المقترح..."
+                        required
+                      />
+                    </div>
+
+                    <div class="predefined-text">
+                      <p>
+                        أود أن أعبر لكم عن تقديري لجهودكم الكبيرة وتفانيكم في
+                        العمل .. لكن أود بطرح بعض المقترحات التي ستقوم بتحسين
+                        التعامل المباشر للبوابة الداخلية:
+                      </p>
+                      <ul class="suggestions-list">
+                        <li>** عرض آخر التحديثات في بداية البوابة ..</li>
+                        <li>** تمييز العروض والخصومات في بداية التصفح ..</li>
+                        <li>** تمييز الخدمات الأكثر استخدامًا ..</li>
+                        <li>** عرض الإدارة التابعة لها الموظف ..</li>
+                      </ul>
+                      <div class="sender-info">
+                        المرسل: <span>فاطمة الزهراء عبد الرحمن</span>
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="submit-btn">إرسال</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- poll-section -->
+          <div class="poll-section">
+            <div class="section-header">
+              <h2 class="section-title">استطلاع الراي</h2>
+              <div class="view-all">
+                <span>عرض الكل</span>
+                <img
+                  src="../assets/images/icons/right-body/Arrow-left.svg"
+                  alt="arrow"
+                  class="arrow-icon"
+                />
+              </div>
+            </div>
+
+            <div class="ratings">
+              <p>ما رأيك في التصميم الجديد للبوابة الداخلية لصندوق البيئة؟</p>
+              <div class="rating-item">
+                <span class="bullet"></span>
+                <span class="label">ممتاز</span>
+              </div>
+              <div class="rating-item">
+                <span class="bullet"></span>
+                <span class="label">جيد جدا</span>
+              </div>
+              <div class="rating-item">
+                <span class="bullet"></span>
+                <span class="label">مقبول</span>
+              </div>
+            </div>
+
+            <div class="poll-buttons">
+              <button class="vote-btn">تصويت</button>
+              <button class="results-btn">عرض النتائج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Body -->
+      <div class="left-body">
+        <!-- meetings-section -->
+        <section class="meetings-section">
+          <div class="header-row">
+            <div class="meeting">
+              <img
+                src="../assets/images/icons/left-body/calendar.svg"
+                alt="calendar"
+              />
+              <h2 class="meetings-title">الاجتماعات القادمة</h2>
+            </div>
+            <div class="date-picker">
+              <span class="selected-date">06 يناير 2025</span>
+              <img
+                src="../assets/images/icons/left-body/arrow-down.svg"
+                alt="arrow-down"
+              />
+            </div>
+          </div>
+          <div class="days-container">
+            <div class="day-card" data-day="sunday" data-date="05 يناير 2025">
+              <span class="day-name">الأحد</span>
+              <span class="day-date">05</span>
+            </div>
+            <div
+              class="day-card active"
+              data-day="monday"
+              data-date="06 يناير 2025"
+            >
+              <span class="day-name">الاثنين</span>
+              <span class="day-date">06</span>
+            </div>
+            <div class="day-card" data-day="tuesday" data-date="07 يناير 2025">
+              <span class="day-name">الثلاثاء</span>
+              <span class="day-date">07</span>
+            </div>
+            <div
+              class="day-card"
+              data-day="wednesday"
+              data-date="08 يناير 2025"
+            >
+              <span class="day-name">الأربعاء</span>
+              <span class="day-date">08</span>
+            </div>
+            <div class="day-card" data-day="thursday" data-date="09 يناير 2025">
+              <span class="day-name">الخميس</span>
+              <span class="day-date">09</span>
+            </div>
+          </div>
+
+          <div class="meetings-list">
+            <!-- sunday meeting  -->
+            <div class="meeting-item" data-day="sunday">
+              <div class="meeting-header">
+                <img
+                  src="../assets/images/icons/left-body/clock.svg"
+                  alt="clock"
+                />
+                <span class="meeting-time">08:00-7:00</span>
+              </div>
+              <h3 class="meeting-title">اجتماع تحضيري</h3>
+              <div class="meeting-location">
+                <img
+                  src="../assets/images/icons/left-body/location.svg"
+                  alt="location"
+                />
+                <span>القاعة الرئيسية</span>
+              </div>
+            </div>
+
+            <!-- monday meeting  -->
+            <div class="meeting-item active" data-day="monday">
+              <div class="meeting-header">
+                <img
+                  src="../assets/images/icons/left-body/clock.svg"
+                  alt="clock"
+                />
+                <span class="meeting-time">10:00-9:00</span>
+              </div>
+              <h3 class="meeting-title">ورشة عمل لمناقشة التصميمات</h3>
+              <div class="meeting-location">
+                <img
+                  src="../assets/images/icons/left-body/location.svg"
+                  alt="location"
+                />
+                <span>Microsoft Teams Meeting</span>
+              </div>
+            </div>
+
+            <div class="meeting-item active" data-day="monday">
+              <div class="meeting-header">
+                <img
+                  src="../assets/images/icons/left-body/clock.svg"
+                  alt="clock"
+                />
+                <span class="meeting-time">11:00-10:00</span>
+              </div>
+              <h3 class="meeting-title">اجتماع بدء مشروع البيئة الجديد</h3>
+              <div class="meeting-location">
+                <img
+                  src="../assets/images/icons/left-body/location.svg"
+                  alt="location"
+                />
+                <span>غرفة الاجتماعات</span>
+              </div>
+            </div>
+
+            <!-- Tuesday meeting  -->
+            <div class="meeting-item" data-day="tuesday">
+              <div class="meeting-header">
+                <img
+                  src="../assets/images/icons/left-body/clock.svg"
+                  alt="clock"
+                />
+                <span class="meeting-time">12:00-11:00</span>
+              </div>
+              <h3 class="meeting-title">مراجعة الميزانية</h3>
+              <div class="meeting-location">
+                <img
+                  src="../assets/images/icons/left-body/location.svg"
+                  alt="location"
+                />
+                <span>القاعة الفرعية</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="employee-directory">
+          <div class="directory-container">
+            <h3 class="directory-title">دليل الموظفين</h3>
+            <p class="directory-subtitle">
+              يمكنك البحث بإسم الموظف ,البريد الالكتروني ,التحويلة...
+            </p>
+
+            <div class="search-box">
+              <img
+                src="../assets/images/icons/left-body/search.svg"
+                alt="search"
+              />
+              <input type="text" placeholder="ادخل الأحرف الأولى..." />
+            </div>
+
+            <button class="search-btn">بحث</button>
+          </div>
+        </div>
+        <div class="important-announcement">
+          <div class="announcement-container">
+            <h3 class="announcement-title">إعلان هام</h3>
+            <img
+              src="../assets/images/icons/left-body/important-notification.svg"
+              alt="important-notification"
+              class="announcement-image"
+            />
+          </div>
+        </div>
+        <div class="official-holidays">
+          <div class="holidays-container">
+            <h3 class="holidays-title">الاجازات الرسمية</h3>
+
+            <div class="holiday-item">
+              <div class="holiday-info">
+                <h4 class="holiday-name">يوم التاسيس السعودي</h4>
+                <div class="holiday-date">
+                  <img
+                    src="../assets/images/icons/left-body/calendar-holiday.svg"
+                    alt="calendar"
+                  />
+                  <span>22 فبراير 2025</span>
+                </div>
+              </div>
+              <button class="days-counter">يوم واحد</button>
+            </div>
+
+            <div class="holiday-item">
+              <div class="holiday-info">
+                <h4 class="holiday-name">عيد الفطر المبارك</h4>
+                <div class="holiday-date">
+                  <img
+                    src="../assets/images/icons/left-body/calendar-holiday.svg"
+                    alt="calendar"
+                  />
+                  <span>30 مارس -1 ابريل</span>
+                </div>
+              </div>
+              <button class="days-counter">3 ايام</button>
+            </div>
+
+            <div class="holiday-item">
+              <div class="holiday-info">
+                <h4 class="holiday-name">عيد الاضحى المبارك</h4>
+                <div class="holiday-date">
+                  <img
+                    src="../assets/images/icons/left-body/calendar-holiday.svg"
+                    alt="calendar"
+                  />
+                  <span>6 يونيو -10 يونيو</span>
+                </div>
+              </div>
+              <button class="days-counter">4 أيام</button>
+            </div>
+
+            <div class="holiday-item">
+              <div class="holiday-info">
+                <h4 class="holiday-name">اليوم الوطني</h4>
+                <div class="holiday-date">
+                  <img
+                    src="../assets/images/icons/left-body/calendar-holiday.svg"
+                    alt="calendar"
+                  />
+                  <span>23 سبتمبر 2025</span>
+                </div>
+              </div>
+              <button class="days-counter">يوم واحد</button>
+            </div>
+          </div>
+        </div>
+        <div class="calendar-section">
+          <div class="calendar-container">
+            <!-- Header -->
+            <div class="calendar-header">
+              <div class="header-right">
+                <img
+                  src="../assets/images/icons/left-body/blue-calendar.svg"
+                  alt="calendar"
+                />
+                <span>تقويم</span>
+                <span class="year">2025</span>
+              </div>
+              <div class="header-left">
+                <span class="month">مارس 2025</span>
+                <img
+                  src="../assets/images/icons/left-body/blue-arrow.svg"
+                  alt="dropdown"
+                  class="dropdown-arrow"
+                />
+              </div>
+            </div>
+
+            <!-- Days -->
+            <div class="days-row">
+              <span>الأحد</span>
+              <span>الاثنين</span>
+              <span>الثلاثاء</span>
+              <span>الأربعاء</span>
+              <span>الخميس</span>
+              <span>الجمعة</span>
+              <span>السبت</span>
+            </div>
+
+            <!-- Dates Grid -->
+            <div class="dates-grid">
+              <div class="date-cell">29</div>
+              <div class="date-cell">30</div>
+              <div class="date-cell event-date">
+                1
+                <img
+                  src="../assets/images/icons/left-body/Oval.svg"
+                  class="event-marker"
+                />
+              </div>
+              <div class="date-cell">2</div>
+              <div class="date-cell">3</div>
+              <div class="date-cell">4</div>
+              <div class="date-cell">5</div>
+
+              <div class="date-cell">6</div>
+              <div class="date-cell">7</div>
+              <div class="date-cell">8</div>
+              <div class="date-cell">9</div>
+              <div class="date-cell">10</div>
+              <div class="date-cell holiday-date">
+                11
+                <img
+                  src="../assets/images/icons/left-body/Oval.svg"
+                  class="event-marker"
+                />
+              </div>
+              <div class="date-cell">12</div>
+
+              <div class="date-cell">13</div>
+              <div class="date-cell">14</div>
+              <div class="date-cell">15</div>
+              <div class="date-cell">16</div>
+              <div class="date-cell">17</div>
+              <div class="date-cell">18</div>
+              <div class="date-cell">19</div>
+
+              <div class="date-cell">20</div>
+              <div class="date-cell">21</div>
+              <div class="date-cell meeting-date">
+                22
+                <img
+                  src="../assets/images/icons/left-body/Oval.svg"
+                  class="event-marker"
+                />
+              </div>
+              <div class="date-cell">23</div>
+              <div class="date-cell">24</div>
+              <div class="date-cell">25</div>
+              <div class="date-cell">26</div>
+
+              <div class="date-cell">27</div>
+              <div class="date-cell">28</div>
+              <div class="date-cell">29</div>
+              <div class="date-cell">30</div>
+              <div class="date-cell">31</div>
+              <div class="date-cell empty"></div>
+              <div class="date-cell empty"></div>
+            </div>
+          </div>
+        </div>
+        <div class="x-platform-section">
+          <div class="platform-container">
+            <h3 class="platform-title">منصة X</h3>
+            <img
+              src="../assets/images/icons/left-body/x.svg"
+              alt="twitter"
+              class="platform-image"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-shape">
+        <img src="../assets/images/icons/footer/Pattern.svg" alt="shape" />
+      </div>
+
+      <div class="footer-content">
+        <div class="copyright">جميع الحقوق محفوظة لصندوق البيئة © 2025</div>
+
+        <div class="footer-links">
+          <a href="#" class="footer-link">سياسة الخصوصية</a>
+          <a href="#" class="footer-link">إخلاء المسؤولية</a>
+          <a href="#" class="footer-link">خريطة الموقع</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="../assets/js/jQuery.js"></script>
+    <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>

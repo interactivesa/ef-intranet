@@ -1,0 +1,32 @@
+body {
+    font-family: $font-en;
+    // color: $color-default;
+    direction: $direction;
+    text-align: $start-direction;
+  }
+  html[dir="rtl"] body {
+    font-family: $font-ar;
+  }
+  *,
+  *:focus,
+  *:active,
+  button:focus {
+    outline: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .text-left {
+    text-align: #{$end-direction} !important;
+  }
+  .text-right {
+    text-align: #{$start-direction} !important;
+  }
+  .float-left {
+    float: #{$end-direction} !important;
+  }
+  .float-right {
+    float: #{$start-direction} !important;
+  }
+  
