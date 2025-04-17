@@ -10,10 +10,10 @@ collapseBtn.addEventListener("click", () => {
 // darkmode.js
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("modeToggle");
-  const topBar = document.getElementById("topBar");
+  const mainContent = document.getElementById("mainContent");
 
   toggle.addEventListener("click", () => {
-    topBar.classList.toggle("light-mode");
+    mainContent.classList.toggle("light-mode");
   });
 });
 // carousel slider swiper
