@@ -686,13 +686,19 @@ h6 {
   background-color: $bg-left-card;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 20px;
+  padding: 12px 30px 0px 18px;
+  width: 454px !important;
+  height: 2845px;
+  overflow: hidden;
 
   .meetings-section {
     background: $lavender-color;
     border-radius: 12px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     padding: 8px;
+    height: 431px;
+    overflow: hidden;
+    width: 406px;
 
     .header-row {
       display: flex;
@@ -851,6 +857,9 @@ h6 {
   border-radius: 15px;
   padding: 15px;
   margin-top: 18px;
+  width: 406px;
+  height: 259px;
+  overflow: hidden;
 
   .directory-container {
     .directory-title {
@@ -923,7 +932,7 @@ h6 {
   }
 }
 .important-announcement {
-  margin-top: 18px;
+  margin-top: 19px;
   .announcement-container {
     background: transparent;
 
@@ -936,8 +945,9 @@ h6 {
     }
 
     .announcement-image {
-      width: 100%;
-      height: 500px;
+      width: 406px;
+      height: 600px;
+      overflow: hidden;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -963,6 +973,9 @@ h6 {
 
 .official-holidays {
   background: $brown2;
+  width: 406px;
+  height: 418px;
+  overflow: hidden;
   border-radius: 12px;
   padding: 15px 15px 2px 15px;
   margin-top: 24px;
@@ -1047,6 +1060,9 @@ h6 {
 .calendar-section {
   background: $white;
   border-radius: 15px;
+  width: 406px;
+  height: 358px;
+  overflow: hidden;
   padding: 20px;
   margin-top: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -1209,8 +1225,9 @@ h6 {
     }
 
     .platform-image {
-      width: 100%;
-      height: 600px;
+      width: 406px;
+      height: 489px;
+      overflow: hidden;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1245,6 +1262,11 @@ h6 {
 
   .sidenav.collapsed ~ & {
     margin-right: 100px !important;
+
+    .left-body{
+      height: 2843px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -1256,6 +1278,7 @@ h6 {
   padding: 4px 14px;
   background: $seconary-color;
   border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 
   .top-bar {
     position: absolute;
@@ -1379,13 +1402,13 @@ h6 {
   .swiper-carousel {
     border-radius: 7px;
     overflow: hidden;
-    height: 43vh;
+    height: 41vh;
     margin-top: 60px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     position: relative;
 
     .swiper {
-      height: 43vh !important;
+      height: 41vh !important;
       position: relative;
 
       &-slide {
@@ -1507,8 +1530,8 @@ h6 {
           transition: all 0.2s;
 
           &:hover {
-            background: $seconary-color !important;
-            color: $white !important;
+            background: $bg-dropdown-nav !important;
+            color: $seconary-color !important;
           }
         }
       }
@@ -1570,7 +1593,9 @@ h6 {
   // Electronic systems
   .new-systems-section {
     background: $bg-left-card;
-    width: 100%;
+    width: 1067px;
+    height: 263px;
+    overflow: hidden;
     border-radius: 10px;
     padding: 9px 10px;
     margin-top: 17px;
@@ -1780,10 +1805,10 @@ h6 {
         padding: 8px 15px;
         font-size: 14px;
         border-radius: 20px;
-        background: #eaecf8;
+        background: $bg-dropdown-nav;
         transition: all 0.2s ease;
         display: inline-flex;
-        border: 1px solid #eaecf8;
+        border: 1px solid $bg-dropdown-nav;
 
         &.active {
           background: $seconary-color !important;
@@ -1845,7 +1870,7 @@ h6 {
         .search-input {
           width: 100%;
           padding: 12px 15px 12px 45px;
-          border: 1px solid #eaecf8;
+          border: 1px solid $bg-dropdown-nav;
           border-radius: 8px;
           font-size: 14px;
           transition: all 0.3s;
@@ -1885,7 +1910,7 @@ h6 {
 
           &:hover {
             border-color: $seconary-color;
-            background: #eaecf8;
+            background: $bg-dropdown-nav;
           }
         }
       }
@@ -1897,7 +1922,7 @@ h6 {
         .message-input {
           width: 100%;
           padding: 15px;
-          border: 2px solid #eaecf8;
+          border: 2px solid $bg-dropdown-nav;
           border-radius: 8px;
           min-height: 120px;
           resize: vertical;
@@ -2046,8 +2071,12 @@ h6 {
       }
     }
   }
+
   // new-updates-section
   .new-updates-section {
+    width: 1067px;
+    height: 784px;
+    overflow: hidden;
     background: $bg-left-card;
     border-radius: 10px;
     padding: 7px 9px;
@@ -2268,10 +2297,48 @@ h6 {
     }
   }
   // offers
-  .offer-image {
-    width: 100%;
-    object-fit: contain;
+  .new-systems-sections {
+    background: $bg-left-card;
+    width: 1067px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 9px 10px;
+    margin-top: 17px;
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .section-title {
+        color: $white;
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .view-all {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $white;
+        cursor: pointer;
+
+        .arrow-icon {
+          width: 20px;
+        }
+      }
+    }
+
+    .offer-image {
+      width: 1035px;
+      height: 322px;
+      overflow: hidden;
+      object-fit: contain;
+    }
   }
+  
   // library
   .dual-sections {
     display: grid;
@@ -2288,6 +2355,9 @@ h6 {
     background: $bg-left-card;
     border-radius: 12px;
     padding: 25px;
+    width: 522px;
+    height: 388px;
+    overflow: hidden;
 
     .section-header {
       display: flex;
@@ -2366,6 +2436,9 @@ h6 {
       border-radius: 12px;
       padding: 30px;
       text-align: center;
+      width: 522px;
+      height: 188px;
+      overflow: hidden;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
       img {
@@ -2392,6 +2465,9 @@ h6 {
 
       .info-box {
         background: $white;
+        width: 255px;
+        height: 188px;
+        overflow: hidden;
         border-radius: 12px;
         padding: 25px;
         display: flex;
@@ -2457,8 +2533,9 @@ h6 {
     background: #35428c;
     border-radius: 12px;
     padding: 25px;
-    width: 100%;
-    height: 100%;
+    width: 522px;
+    height: 373px;
+    overflow: hidden;
 
     .section-header {
       display: flex;
@@ -2596,8 +2673,9 @@ h6 {
       background: $white;
       border-radius: 12px;
       padding: 30px;
-      height: 100%;
-      width: 100%;
+      width: 522px;
+      height: 373px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2863,7 +2941,18 @@ h6 {
     background-color: $white;
   }
   .left-body{
-    background-color: $Beige1-color;
+    background-color: $Beige2-color;
   }
-
+  .new-systems-section{
+    background-color: $white;
+  }
+  .new-updates-section{
+    background-color: $white;
+  }
+  .files-section{
+    background-color: $white;
+  }
+  .poll-section{
+    background-color: $white;
+  }
 }

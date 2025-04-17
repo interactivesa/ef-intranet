@@ -11,9 +11,29 @@ collapseBtn.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("modeToggle");
   const mainContent = document.getElementById("mainContent");
+  const topBar = document.getElementById("topBar");
+  const electSystems = document.getElementById("electSystems");
+  const newUpdates = document.getElementById("newUpdates");
+  const filesLibrary = document.getElementById("filesLibrary");
+  const pollSection = document.getElementById("pollSection");
 
   toggle.addEventListener("click", () => {
     mainContent.classList.toggle("light-mode");
+  });
+  toggle.addEventListener("click", () => {
+    topBar.classList.toggle("light-mode");
+  });
+  toggle.addEventListener("click", () => {
+    electSystems.classList.toggle("light-mode");
+  });
+  toggle.addEventListener("click", () => {
+    newUpdates.classList.toggle("light-mode");
+  });
+  toggle.addEventListener("click", () => {
+    filesLibrary.classList.toggle("light-mode");
+  });
+  toggle.addEventListener("click", () => {
+    filesLibrary.classList.toggle("light-mode");
   });
 });
 // carousel slider swiper
