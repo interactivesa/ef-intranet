@@ -2851,3 +2851,19 @@ h6 {
     }
   }
 }
+
+
+
+
+
+// light mode
+
+.main-content.light-mode {
+  .right-body{
+    background-color: $white;
+  }
+  .left-body{
+    background-color: $Beige1-color;
+  }
+
+}
