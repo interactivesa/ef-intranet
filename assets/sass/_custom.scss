@@ -1445,8 +1445,26 @@ h6 {
         &-bullet {
           background: $white;
           opacity: 0.5;
+          width: 12px; 
+          height: 12px;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+  
           &-active {
             background: $seconary-color;
+            width: 40px; 
+            border-radius: 8px; 
+            position: relative;
+  
+            &::after {
+              content: '';
+              position: absolute;
+              top: -3px;
+              left: -3px;
+              right: -3px;
+              bottom: -3px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -1590,39 +1608,48 @@ h6 {
       }
     }
   }
-  // Electronic systems
-  .new-systems-section {
-    background: $bg-left-card;
-    width: 1067px;
-    height: 263px;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 9px 10px;
-    margin-top: 17px;
 
-    .section-header {
+/* ========== الأنظمة الإلكترونية ========== */
+.new-systems-section {
+  background: $bg-left-card;
+  width: 1067px;
+  height: 263px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 9px 10px;
+  margin-top: 17px;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .section-title {
+      color: $white;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .view-all {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      gap: 10px;
+      color: $white;
+      cursor: pointer;
 
-      .section-title {
-        color: $white;
-        font-size: 20px;
-        margin: 0;
+      .arrow-icon {
+        width: 20px;
       }
+    }
+  }
 
-      .view-all {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: $white;
-        cursor: pointer;
+  // Swiper خاص بالأنظمة الإلكترونية
+  .swiper-electronic {
+    padding: 0 50px;
 
-        .arrow-icon {
-          width: 20px;
-        }
-      }
+    .swiper-slide {
+      width: auto !important;
     }
 
     .system-card {
@@ -1665,14 +1692,6 @@ h6 {
         color: $seconary-color;
         font-size: 18px;
         margin: 0;
-      }
-    }
-
-    .swiper {
-      padding: 0 50px;
-
-      &-slide {
-        width: auto !important;
       }
     }
 
@@ -1725,313 +1744,16 @@ h6 {
             transform: scale(1.1);
           }
         }
-
-        .swiper-button-next {
-          background: $success-color;
-        }
-      }
-    }
-    .rating-container {
-      .rating-star {
-        font-size: 28px;
-        cursor: pointer;
-        color: $seconary-color;
-        transition: all 0.3s ease;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-
-        &[data-rating="true"] {
-          color: $seconary-color;
-        }
       }
     }
   }
 
-  // Main Modal Styles
-  .appreciation-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-
-    .modal-content {
-      background: $white;
-      padding: 25px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 600px;
-      position: relative;
-
-      .close-btn {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        font-size: 28px;
-        cursor: pointer;
-        color: $seconary-color;
-        transition: all 0.3s;
-        z-index: 1001;
-        line-height: 1;
-      }
-    }
-
-    .modal-title {
-      color: $seconary-color;
-      font-size: 20px;
-      text-align: center;
-      margin: 0 0 25px 0;
-      font-weight: bold;
-    }
-
-    // Tabs Styles
-    .notification-tabs {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      direction: rtl;
-      justify-content: flex-start;
-
-      .tab {
-        padding: 8px 15px;
-        font-size: 14px;
-        border-radius: 20px;
-        background: $bg-dropdown-nav;
-        transition: all 0.2s ease;
-        display: inline-flex;
-        border: 1px solid $bg-dropdown-nav;
-
-        &.active {
-          background: $seconary-color !important;
-          color: $white;
-          border-color: $seconary-color;
-
-          .notification-badge {
-            background: $white !important;
-            color: $seconary-color;
-            font-size: 10px;
-            min-width: 20px;
-            height: 20px;
-            margin-right: 5px;
-          }
-        }
-
-        &:hover {
-          background: lighten($seconary-color, 10%);
-          color: $white;
-        }
-
-        .notification-badge {
-          background: $seconary-color;
-          color: $white;
-          font-size: 12px;
-          min-width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 8px;
-        }
-      }
-    }
-
-    // Tab Content
-    .tab-content {
-      display: none;
-
-      &.active {
-        display: block;
-      }
-
-      // Search Section
-      .search-container {
-        position: relative;
-        margin-bottom: 25px;
-
-        .search-icon {
-          position: absolute;
-          left: 15px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 20px;
-          height: 20px;
-        }
-
-        .search-input {
-          width: 100%;
-          padding: 12px 15px 12px 45px;
-          border: 1px solid $bg-dropdown-nav;
-          border-radius: 8px;
-          font-size: 14px;
-          transition: all 0.3s;
-          direction: rtl;
-
-          &:focus {
-            outline: none;
-            border-color: $seconary-color;
-            box-shadow: 0 0 8px rgba($seconary-color, 0.1);
-          }
-        }
-      }
-
-      // Quick Buttons
-      .quick-buttons {
-        display: flex;
-        gap: 8px;
-        margin-bottom: 20px;
-        direction: rtl;
-        justify-content: flex-start;
-
-        .quick-btn {
-          padding: 7px 22px;
-          border-radius: 20px;
-          font-size: 13px;
-          background: transparent;
-          border: 1px solid #cbd0ee;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          transition: all 0.3s;
-
-          img {
-            width: 20px !important;
-            height: 20px !important;
-          }
-
-          &:hover {
-            border-color: $seconary-color;
-            background: $bg-dropdown-nav;
-          }
-        }
-      }
-
-      // Message Container
-      .message-container {
-        margin-bottom: 25px;
-
-        .message-input {
-          width: 100%;
-          padding: 15px;
-          border: 2px solid $bg-dropdown-nav;
-          border-radius: 8px;
-          min-height: 120px;
-          resize: vertical;
-          font-size: 14px;
-          transition: all 0.3s;
-          direction: rtl;
-
-          &:focus {
-            outline: none;
-            box-shadow: 0 0 12px rgba($seconary-color, 0.2);
-          }
-        }
-      }
-
-      // Send Button
-      .send-btn {
-        width: 100%;
-        padding: 11px;
-        background: #2a3886;
-        color: #ffffff;
-        border: none;
-        border-radius: 35px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 16px;
-        transition: all 0.3s;
-        position: relative;
-        overflow: hidden;
-        direction: rtl;
-
-        &:hover {
-          background: $light-success-color;
-          letter-spacing: 1px;
-
-          &::after {
-            content: "←";
-            margin-left: 10px;
-            opacity: 1;
-          }
-        }
-
-        &::after {
-          content: "←";
-          position: absolute;
-          left: -20px;
-          opacity: 0;
-          transition: all 0.3s;
-        }
-      }
-    }
-  }
-
-  // Responsive Design
-  @media (max-width: 768px) {
-    .appreciation-modal {
-      .modal-content {
-        padding: 20px;
-        max-width: 95%;
-      }
-
-      .notification-tabs {
-        flex-direction: column;
-
-        .tab {
-          width: 100%;
-          padding: 12px;
-        }
-      }
-
-      .quick-buttons {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .send-btn {
-        font-size: 14px;
-        padding: 12px;
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    .appreciation-modal {
-      .quick-buttons {
-        grid-template-columns: 1fr;
-      }
-
-      .notification-item {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  }
-  @media (max-width: 1200px) {
-    .new-systems-section {
-      padding: 25px 30px;
-
-      .system-card {
-        width: 280px;
-      }
-    }
-  }
-
+  // Media Queries للأنظمة الإلكترونية
   @media (max-width: 992px) {
-    .new-systems-section {
-      padding: 20px;
+    padding: 20px;
 
-      .swiper {
-        padding: 0 30px;
-      }
+    .swiper-electronic {
+      padding: 0 30px;
 
       .system-card {
         width: 260px;
@@ -2045,82 +1767,58 @@ h6 {
   }
 
   @media (max-width: 768px) {
-    .new-systems-section {
-      .controls-container {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .system-card {
-        width: 240px;
-      }
+    .controls-container {
+      flex-direction: column;
+      gap: 15px;
     }
   }
+}
 
-  @media (max-width: 576px) {
-    .new-systems-section {
-      .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-      }
+/* ========== آخر التحديثات ========== */
+.new-updates-section {
+  width: 1067px;
+  height: 784px;
+  overflow: hidden;
+  background: $bg-left-card;
+  border-radius: 10px;
+  padding: 7px 9px;
+  margin-top: 12px;
 
-      .system-card {
-        width: 100%;
-        max-width: 300px;
-      }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .section-title {
+      color: $white;
+      font-size: 20px;
+      margin: 0;
     }
-  }
 
-  // new-updates-section
-  .new-updates-section {
-    width: 1067px;
-    height: 784px;
-    overflow: hidden;
-    background: $bg-left-card;
-    border-radius: 10px;
-    padding: 7px 9px;
-    margin-top: 12px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-
-    .section-header {
+    .view-all {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 25px;
+      gap: 10px;
+      color: $white;
+      cursor: pointer;
 
-      .section-title {
-        color: $white;
-        font-size: 20px;
-        margin: 0;
-      }
-
-      .view-all {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: $white;
-        cursor: pointer;
-
-        .arrow-icon {
-          width: 20px;
-        }
+      .arrow-icon {
+        width: 20px;
       }
     }
+  }
 
+  .content-container {
     .tabs-container {
       display: inline-flex !important;
       gap: 20px;
       justify-content: flex-end;
-      margin-bottom: 20px;
 
       .tab {
         background: $white;
-        padding: 10px 20px;
-        border-radius: 8px;
+        padding: 6px 27px;
+        border-radius: 41px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -2128,7 +1826,7 @@ h6 {
 
         &.active {
           background: $success-color;
-          color: $white;
+          color: $seconary-color;
 
           .event-count {
             background: darken($success-color, 10%);
@@ -2136,166 +1834,158 @@ h6 {
         }
 
         .event-count {
-          background: $success-color;
-          color: $white;
-          padding: 2px 8px;
-          border-radius: 4px;
+          background: $bg-dropdown-nav;
+          color: $seconary-color;
+          width: 24px; 
+          height: 24px; 
+          border-radius: 50%; 
+          display: inline-flex; 
+          align-items: center;
+          justify-content: center;
+          font-size: 0.8em;
           margin-left: 5px;
-          font-size: 0.9em;
+          line-height: 1;
+          padding: 0;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
         }
       }
     }
 
-    .swiper {
+    // Swiper خاص بآخر التحديثات
+    .swiper-updates {
       padding: 0 50px;
 
-      &-wrapper {
+      .swiper-wrapper {
         padding: 10px 0;
       }
-    }
 
-    .images-container {
-      display: flex;
-      gap: 18px;
-      justify-content: center;
-      padding: 20px 0;
-    }
-
-    .update-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px;
-    }
-
-    .controls-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 25px;
-
-      .swiper-pagination {
-        position: static;
-        display: flex;
-        gap: 8px;
-        width: auto;
-
-        &-bullet {
-          background: #505e83;
-          opacity: 1;
-          width: 20px;
-          height: 8px;
-          border-radius: 4px;
-          transition: all 0.3s;
-
-          &-active {
-            background: $success-color !important;
-          }
+      .swiper-slide {
+        display: none !important;
+        
+        &.swiper-slide-active {
+          display: block !important;
         }
-      }
-
-      .nav-buttons {
-        display: flex;
-        gap: 15px;
-
-        .swiper-button-prev,
-        .swiper-button-next {
-          position: static;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          margin: 0;
-          background: $success-color;
-
-          &::after {
-            font-size: 16px;
-            color: $white;
-            font-weight: bold;
-          }
-        }
-
-        .swiper-button-next {
-          background: $success-color;
-        }
-      }
-    }
-
-    @media (max-width: 1400px) {
-      .update-image {
-        width: 500px;
-        height: 480px;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      padding: 25px 30px;
-
-      .update-image {
-        width: 400px;
-        height: 380px;
-      }
-    }
-
-    @media (max-width: 992px) {
-      padding: 20px;
-
-      .tabs-container {
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .tab {
-          padding: 8px 15px;
-          font-size: 14px;
-        }
-      }
-
-      .update-image {
-        width: 300px;
-        height: 280px;
       }
 
       .images-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+        display: flex;
+        gap: 18px;
+        justify-content: center;
 
-    @media (max-width: 768px) {
-      .update-image {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin: 0 10px;
+        .update-image {
+          width: 505px;
+          height: 600px;
+          overflow: hidden;
+          object-fit: cover;
+          border-radius: 4px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
       }
 
       .controls-container {
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
 
-    @media (max-width: 576px) {
-      .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-      }
+        .swiper-pagination {
+          position: static;
+          display: flex;
+          gap: 8px;
+          width: auto;
 
-      .tabs-container {
-        gap: 10px;
+          &-bullet {
+            background: #505e83;
+            opacity: 1;
+            width: 20px;
+            height: 8px;
+            border-radius: 4px;
+            transition: all 0.3s;
 
-        .tab {
-          flex-grow: 1;
-          justify-content: center;
+            &-active {
+              background: $success-color !important;
+            }
+          }
+        }
+
+        .nav-buttons {
+          display: flex;
+          gap: 15px;
+
+          .swiper-button-prev,
+          .swiper-button-next {
+            position: static;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0;
+            background: $success-color;
+
+            &::after {
+              font-size: 16px;
+              color: $white;
+              font-weight: bold;
+            }
+          }
         }
       }
     }
   }
+
+  // Media Queries لآخر التحديثات
+  @media (max-width: 1200px) {
+    padding: 25px 30px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 20px;
+
+    .tabs-container {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .tab {
+        padding: 8px 15px;
+        font-size: 14px;
+      }
+    }
+
+    .images-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .controls-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+// Media Queries العامة
+@media (max-width: 576px) {
+  .new-systems-section,
+  .new-updates-section {
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+
+  .new-updates-section {
+    .tabs-container {
+      gap: 10px;
+
+      .tab {
+        flex-grow: 1;
+        justify-content: center;
+      }
+    }
+  }
+}
   // offers
   .new-systems-sections {
     background: $bg-left-card;
@@ -2955,4 +2645,27 @@ h6 {
   .poll-section{
     background-color: $white;
   }
+  .system-card {
+    border: 1px solid $bg-dropdown-nav
+}
+.tab {
+  background: $bg-dropdown-nav;
+
+  &.active {
+    background: $seconary-color;
+    color: $white;
+
+    .event-count {
+      background: $seconary-color;
+    }
+  }
+
+  .event-count {
+    background: $white;
+    color: $seconary-color;
+  }
+}
+.section-title {
+  color: $seconary-color;
+}
 }

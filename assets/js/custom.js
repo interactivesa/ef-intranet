@@ -69,18 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // tabs.js & swiper.js
 document.addEventListener("DOMContentLoaded", function () {
   // تهيئة Swiper
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  
 
   // إدارة التبويبات
   const tabs = document.querySelectorAll(".tab");
@@ -323,4 +312,93 @@ document.querySelector(".send-btn").addEventListener("click", function () {
   document
     .querySelectorAll(".quick-btn")
     .forEach((btn) => btn.classList.remove("active"));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Swiper electronic systems
+  const elecSwiper = new Swiper(".ElecSwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".ElecSwiper .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".ElecSwiper .swiper-button-next",
+      prevEl: ".ElecSwiper .swiper-button-prev",
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }
+  });
+});
+// Electronic systems Swiper
+const electronicSwiper = new Swiper('.swiper-electronic', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+      el: '.swiper-electronic .swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-electronic .swiper-button-next',
+      prevEl: '.swiper-electronic .swiper-button-prev',
+  },
+  loop: true,
+});
+
+// Updates Swiper
+const updatesSwiper = new Swiper('.swiper-updates', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  slidesPerGroup: 1, // أضف هذا
+  autoHeight: true,
+  pagination: {
+    el: '.swiper-updates .swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 2 // عدد النقاط المرئية
+  },
+  navigation: {
+    nextEl: '.swiper-updates .swiper-button-next',
+    prevEl: '.swiper-updates .swiper-button-prev',
+  },
+  breakpoints: { // إعدادات متجاوبة
+    768: {
+      slidesPerGroup: 2, // تجميع شريحتين في الأجهزة الكبيرة
+      pagination: {
+        dynamicMainBullets: 2
+      }
+    }
+  },
+  on: {
+    init: function() {
+      this.slides.forEach(slide => slide.style.display = 'none');
+      this.slides[this.activeIndex].style.display = 'block';
+    },
+    slideChange: function() {
+      this.slides.forEach(slide => slide.style.display = 'none');
+      this.slides[this.activeIndex].style.display = 'block';
+    }
+  }
+});
+
+// إدارة التبويبات
+const tabs = document.querySelectorAll(".tab");
+tabs.forEach(tab => {
+  tab.addEventListener("click", function() {
+    const targetIndex = Array.from(tabs).indexOf(this);
+    updatesSwiper.slideToLoop(targetIndex); 
+  });
+});
+
+updatesSwiper.on('slideChange', function() {
+  const activeIndex = this.realIndex;
+  tabs.forEach(tab => tab.classList.remove("active"));
+  tabs[activeIndex]?.classList.add("active"); 
 });
