@@ -1847,6 +1847,225 @@ h6 {
   border-radius: 20px;
   margin-right: auto;
 }
+.right-body .appreciation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.right-body .appreciation-modal .modal-content {
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+.right-body .appreciation-modal .modal-content .close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2A3886;
+  transition: all 0.3s;
+  z-index: 1001;
+  line-height: 1;
+}
+.right-body .appreciation-modal .modal-title {
+  color: #2A3886;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 25px 0;
+  font-weight: bold;
+}
+.right-body .appreciation-modal .notification-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  direction: rtl;
+  justify-content: flex-start;
+}
+.right-body .appreciation-modal .notification-tabs .tab {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  background: #eaecf8;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  border: 1px solid #eaecf8;
+}
+.right-body .appreciation-modal .notification-tabs .tab.active {
+  background: #2A3886 !important;
+  color: #FFFFFF;
+  border-color: #2A3886;
+}
+.right-body .appreciation-modal .notification-tabs .tab.active .notification-badge {
+  background: #FFFFFF !important;
+  color: #2A3886;
+  font-size: 10px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.right-body .appreciation-modal .notification-tabs .tab:hover {
+  background: #3648ad;
+  color: #FFFFFF;
+}
+.right-body .appreciation-modal .notification-tabs .tab .notification-badge {
+  background: #2A3886;
+  color: #FFFFFF;
+  font-size: 12px;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.right-body .appreciation-modal .tab-content {
+  display: none;
+}
+.right-body .appreciation-modal .tab-content.active {
+  display: block;
+}
+.right-body .appreciation-modal .tab-content .search-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.right-body .appreciation-modal .tab-content .search-container .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.right-body .appreciation-modal .tab-content .search-container .search-input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid #eaecf8;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+  direction: rtl;
+}
+.right-body .appreciation-modal .tab-content .search-container .search-input:focus {
+  outline: none;
+  border-color: #2A3886;
+  box-shadow: 0 0 8px rgba(42, 56, 134, 0.1);
+}
+.right-body .appreciation-modal .tab-content .quick-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  direction: rtl;
+  justify-content: flex-start;
+}
+.right-body .appreciation-modal .tab-content .quick-buttons .quick-btn {
+  padding: 7px 22px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #cbd0ee;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+.right-body .appreciation-modal .tab-content .quick-buttons .quick-btn img {
+  width: 20px !important;
+  height: 20px !important;
+}
+.right-body .appreciation-modal .tab-content .quick-buttons .quick-btn:hover {
+  border-color: #2A3886;
+  background: #eaecf8;
+}
+.right-body .appreciation-modal .tab-content .message-container {
+  margin-bottom: 25px;
+}
+.right-body .appreciation-modal .tab-content .message-container .message-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #eaecf8;
+  border-radius: 8px;
+  min-height: 120px;
+  resize: vertical;
+  font-size: 14px;
+  transition: all 0.3s;
+  direction: rtl;
+}
+.right-body .appreciation-modal .tab-content .message-container .message-input:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(42, 56, 134, 0.2);
+}
+.right-body .appreciation-modal .tab-content .send-btn {
+  width: 100%;
+  padding: 11px;
+  background: #2a3886;
+  color: #ffffff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+}
+.right-body .appreciation-modal .tab-content .send-btn:hover {
+  background: #BDCD5C;
+  letter-spacing: 1px;
+}
+.right-body .appreciation-modal .tab-content .send-btn:hover::after {
+  content: "←";
+  margin-left: 10px;
+  opacity: 1;
+}
+.right-body .appreciation-modal .tab-content .send-btn::after {
+  content: "←";
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .right-body .appreciation-modal .modal-content {
+    padding: 20px;
+    max-width: 95%;
+  }
+  .right-body .appreciation-modal .notification-tabs {
+    flex-direction: column;
+  }
+  .right-body .appreciation-modal .notification-tabs .tab {
+    width: 100%;
+    padding: 12px;
+  }
+  .right-body .appreciation-modal .quick-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .right-body .appreciation-modal .send-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .right-body .appreciation-modal .quick-buttons {
+    grid-template-columns: 1fr;
+  }
+  .right-body .appreciation-modal .notification-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .right-body .notification-section {
   display: grid;
   gap: 20px;
