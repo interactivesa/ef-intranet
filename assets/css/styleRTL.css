@@ -1322,13 +1322,14 @@ h6 {
 }
 .right-body .swiper-carousel .static-caption .caption-content h3 {
   color: #BDCD5C;
-  font-size: 2.5rem;
+  font-size: 40px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   line-height: 1.3;
+  font-family: "font-Bold";
 }
 .right-body .swiper-carousel .static-caption .caption-content p {
   color: #FFFFFF;
-  font-size: 1.2rem;
+  font-size: 20px;
   margin: 25px 0;
   line-height: 1.8;
 }
