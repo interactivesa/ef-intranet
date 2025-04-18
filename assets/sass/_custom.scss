@@ -703,7 +703,7 @@ a {
   border-bottom-left-radius: 20px;
   padding: 18px 10px 0px 0px;
   width: 454px !important;
-  height: 2673px;
+  height: 2843px;
   overflow: hidden;
 
   .meetings-section {
@@ -1268,7 +1268,7 @@ a {
 .main-content {
   display: flex;
   gap: 0px !important;
-  margin-right: 295px !important;
+  margin-right: 300px !important;
   padding: 10px;
   transition: margin-right 0.3s;
 
@@ -1332,6 +1332,7 @@ a {
 
     .left-section .time {
       font-size: 16px;
+      font-family: $font-medium;
     }
 
     .center-section {
@@ -1347,6 +1348,11 @@ a {
         color: $white;
         font-size: 14px;
         transition: color 0.3s;
+
+        p{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
       }
     }
 
@@ -1498,7 +1504,7 @@ a {
     .static-caption {
       position: absolute;
       right: 5%;
-      bottom: 15%;
+      bottom: 9%;
       z-index: 20;
       width: 71%;
       text-align: right;
@@ -1507,7 +1513,6 @@ a {
         h3 {
           color: $light-success-color;
           font-size: 40px;
-          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
           line-height: 1.3;
           font-family: $font-Bold;
         }
@@ -1515,6 +1520,7 @@ a {
         p {
           color: $white;
           font-size: 20px;
+          font-family: $font-ar;
           margin: 25px 0;
           line-height: 1.8;
         }
@@ -1547,6 +1553,10 @@ a {
         gap: 8px;
         transition: all 0.3s;
 
+        span{
+          font-size: 18px;
+          font-family: $font-medium;
+        }
         .dropdown-arrow {
           width: 12px;
           height: 12px;
@@ -1640,7 +1650,7 @@ a {
   /* Electronic Systems Section */
   .electronic-section {
     background: $bg-left-card;
-    width: 1067px;
+    width: 1299px;
     height: 263px;
     border-radius: 10px;
     padding: 15px;
@@ -1656,7 +1666,8 @@ a {
 
       .section-title {
         color: $white;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: $font-simibold;
         margin: 0;
       }
 
@@ -1667,9 +1678,10 @@ a {
         cursor: pointer;
         transition: 0.3s;
 
-        span {
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
           color: $white;
-          font-size: 14px;
         }
 
         .arrow-icon {
@@ -1716,15 +1728,16 @@ a {
         .electronic-icon {
           width: 50px;
           height: 50px;
-          margin: 25px auto 15px;
+          margin: 10px auto 0px;
           display: block;
           object-fit: contain;
         }
 
         h3 {
           color: $seconary-color;
-          font-size: 16px;
-          margin: 0;
+          font-size: 18px;
+          font-family: $font-simibold;
+          margin-top: 5px;
           line-height: 1.4;
           text-align: center;
         }
@@ -1859,7 +1872,8 @@ a {
 
       .section-title {
         color: $white;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: $font-simibold;
         margin: 0;
       }
 
@@ -1869,6 +1883,11 @@ a {
         gap: 10px;
         color: $white;
         cursor: pointer;
+
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
 
         .arrow-icon {
           width: 20px;
@@ -2128,7 +2147,41 @@ a {
       }
     }
   }
+  .new-systems-section {
+    width: 1067px;
+    padding: 20px;
+    margin: 12px auto 0;
+    direction: rtl;
 
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      .section-title {
+        color: $white;
+        font-size: 24px;
+        font-family: $font-simibold;
+        margin: 0;
+      }
+
+      .view-all {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $white;
+        cursor: pointer;
+
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
+        .arrow-icon {
+          width: 20px;
+        }
+      }
+    }}
   // offers
   .new-systems-sections {
     background: $bg-left-card;
@@ -2147,7 +2200,8 @@ a {
 
       .section-title {
         color: $white;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: $font-simibold;
         margin: 0;
       }
 
@@ -2157,6 +2211,11 @@ a {
         gap: 10px;
         color: $white;
         cursor: pointer;
+
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
 
         .arrow-icon {
           width: 20px;
@@ -2172,6 +2231,7 @@ a {
     }
   }
 
+  
   // library
   .dual-sections {
     display: grid;
@@ -2200,7 +2260,8 @@ a {
 
       .section-title {
         color: $white;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: $font-simibold;
         margin: 0;
       }
 
@@ -2211,6 +2272,11 @@ a {
         color: $white;
         cursor: pointer;
         transition: opacity 0.3s;
+
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
 
         &:hover {
           opacity: 0.8;
@@ -2635,7 +2701,8 @@ a {
 
       .section-title {
         color: $white;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: $font-simibold;
       }
 
       .view-all {
@@ -2645,6 +2712,11 @@ a {
         color: $white;
         cursor: pointer;
         font-size: 16px;
+
+        span{
+          font-size: 16px;
+          font-family: $font-medium;
+        }
 
         .arrow-icon {
           width: 20px;

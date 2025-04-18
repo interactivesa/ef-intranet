@@ -666,7 +666,7 @@ a {
   border-bottom-left-radius: 20px;
   padding: 18px 10px 0px 0px;
   width: 454px !important;
-  height: 2673px;
+  height: 2843px;
   overflow: hidden;
 }
 .left-body .meetings-section {
@@ -1140,7 +1140,7 @@ a {
 .main-content {
   display: flex;
   gap: 0px !important;
-  margin-right: 295px !important;
+  margin-right: 300px !important;
   padding: 10px;
   transition: margin-right 0.3s;
 }
@@ -1203,6 +1203,7 @@ a {
 }
 .right-body .top-bar .left-section .time {
   font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .top-bar .center-section {
   display: flex;
@@ -1217,6 +1218,11 @@ a {
   color: #FFFFFF;
   font-size: 14px;
   transition: color 0.3s;
+}
+.right-body .top-bar .center-section .prayer-time p,
+.right-body .top-bar .center-section .weather p {
+  font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .top-bar .right-section {
   gap: 20px;
@@ -1337,7 +1343,7 @@ a {
 .right-body .swiper-carousel .static-caption {
   position: absolute;
   right: 5%;
-  bottom: 15%;
+  bottom: 9%;
   z-index: 20;
   width: 71%;
   text-align: right;
@@ -1345,13 +1351,13 @@ a {
 .right-body .swiper-carousel .static-caption .caption-content h3 {
   color: #BDCD5C;
   font-size: 40px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   line-height: 1.3;
   font-family: "font-Bold";
 }
 .right-body .swiper-carousel .static-caption .caption-content p {
   color: #FFFFFF;
   font-size: 20px;
+  font-family: "font-regular";
   margin: 25px 0;
   line-height: 1.8;
 }
@@ -1379,6 +1385,10 @@ a {
   align-items: center;
   gap: 8px;
   transition: all 0.3s;
+}
+.right-body .swiper-carousel .nav-item.dropdown .custom-dropdown-toggle span {
+  font-size: 18px;
+  font-family: "font-medium";
 }
 .right-body .swiper-carousel .nav-item.dropdown .custom-dropdown-toggle .dropdown-arrow {
   width: 12px;
@@ -1448,7 +1458,7 @@ a {
 }
 .right-body .electronic-section {
   background: #35428C;
-  width: 1067px;
+  width: 1299px;
   height: 263px;
   border-radius: 10px;
   padding: 15px;
@@ -1465,7 +1475,8 @@ a {
 }
 .right-body .electronic-section .section-header .section-title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "font-SimiBold";
   margin: 0;
 }
 .right-body .electronic-section .section-header .view-all {
@@ -1476,8 +1487,9 @@ a {
   transition: 0.3s;
 }
 .right-body .electronic-section .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
   color: #FFFFFF;
-  font-size: 14px;
 }
 .right-body .electronic-section .section-header .view-all .arrow-icon {
   width: 18px;
@@ -1517,14 +1529,15 @@ a {
 .right-body .electronic-section .electronic-swiper .electronic-card .electronic-icon {
   width: 50px;
   height: 50px;
-  margin: 25px auto 15px;
+  margin: 10px auto 0px;
   display: block;
   object-fit: contain;
 }
 .right-body .electronic-section .electronic-swiper .electronic-card h3 {
   color: #2A3886;
-  font-size: 16px;
-  margin: 0;
+  font-size: 18px;
+  font-family: "font-SimiBold";
+  margin-top: 5px;
   line-height: 1.4;
   text-align: center;
 }
@@ -1635,7 +1648,8 @@ a {
 }
 .right-body .new-updates-section .section-header .section-title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "font-SimiBold";
   margin: 0;
 }
 .right-body .new-updates-section .section-header .view-all {
@@ -1644,6 +1658,10 @@ a {
   gap: 10px;
   color: #FFFFFF;
   cursor: pointer;
+}
+.right-body .new-updates-section .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .new-updates-section .section-header .view-all .arrow-icon {
   width: 20px;
@@ -1861,6 +1879,38 @@ a {
 .right-body .new-updates-section .controls-container .nav-buttons .swiper-button-next:hover {
   transform: scale(1.1);
 }
+.right-body .new-systems-section {
+  width: 1067px;
+  padding: 20px;
+  margin: 12px auto 0;
+  direction: rtl;
+}
+.right-body .new-systems-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.right-body .new-systems-section .section-header .section-title {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "font-SimiBold";
+  margin: 0;
+}
+.right-body .new-systems-section .section-header .view-all {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.right-body .new-systems-section .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
+}
+.right-body .new-systems-section .section-header .view-all .arrow-icon {
+  width: 20px;
+}
 .right-body .new-systems-sections {
   background: #35428C;
   width: 1067px;
@@ -1878,7 +1928,8 @@ a {
 }
 .right-body .new-systems-sections .section-header .section-title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "font-SimiBold";
   margin: 0;
 }
 .right-body .new-systems-sections .section-header .view-all {
@@ -1887,6 +1938,10 @@ a {
   gap: 10px;
   color: #FFFFFF;
   cursor: pointer;
+}
+.right-body .new-systems-sections .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .new-systems-sections .section-header .view-all .arrow-icon {
   width: 20px;
@@ -1924,7 +1979,8 @@ a {
 }
 .right-body .files-section .section-header .section-title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "font-SimiBold";
   margin: 0;
 }
 .right-body .files-section .section-header .view-all {
@@ -1934,6 +1990,10 @@ a {
   color: #FFFFFF;
   cursor: pointer;
   transition: opacity 0.3s;
+}
+.right-body .files-section .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .files-section .section-header .view-all:hover {
   opacity: 0.8;
@@ -2285,7 +2345,8 @@ a {
 }
 .right-body .poll-section .section-header .section-title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "font-SimiBold";
 }
 .right-body .poll-section .section-header .view-all {
   display: flex;
@@ -2294,6 +2355,10 @@ a {
   color: #FFFFFF;
   cursor: pointer;
   font-size: 16px;
+}
+.right-body .poll-section .section-header .view-all span {
+  font-size: 16px;
+  font-family: "font-medium";
 }
 .right-body .poll-section .section-header .view-all .arrow-icon {
   width: 20px;
