@@ -1778,8 +1778,8 @@ h6 {
       }
     }
   }
-// New Updates Section
-.new-updates-section {
+  // New Updates Section
+  .new-updates-section {
     width: 1067px;
     padding: 20px;
     margin: 12px auto 0;
@@ -1810,6 +1810,17 @@ h6 {
       }
     }
 
+    .date-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      span {
+        color: $white;
+        font-size: 16px;
+      }
+    }
     .tabs-container {
       display: flex;
       gap: 20px;
@@ -1829,12 +1840,12 @@ h6 {
           color: $seconary-color;
 
           .event-count {
-            background:$seconary-color;
+            background: $seconary-color;
           }
         }
 
         .event-count {
-          background: $seconary-color;;
+          background: $seconary-color;
           color: $white;
           width: 24px;
           height: 24px;
@@ -1846,64 +1857,68 @@ h6 {
         }
       }
     }
-.news-card {
-    position: relative;
-    width: 521px;
-    height: 450px;
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 10px;
-    transition: all 0.3s ease;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    .news-card {
+      position: relative;
+      width: 521px;
+      height: 450px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 10px;
+      transition: all 0.3s ease;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
 
-    .card-image-wrapper{
+      .card-image-wrapper {
         position: relative;
         height: 100%;
-        
+
         .card-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
         }
-        
+
         .card-overlay.initial {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 0px 20px 36px 0px;
-            background: linear-gradient(0deg, rgba($seconary-color, 0.9) 0%, transparent 100%);
-            transition: all 0.3s ease;
-            
-            .news-btn {
-                background: $light-success-color;
-                border-radius: 20px;
-                padding: 5px 25px;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                border: none;
-                margin-bottom: 15px;
-                
-                span {
-                    color: $seconary-color;
-                    font-size: 14px;
-                }
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 0px 20px 36px 0px;
+          background: linear-gradient(
+            0deg,
+            rgba($seconary-color, 0.9) 0%,
+            transparent 100%
+          );
+          transition: all 0.3s ease;
+
+          .news-btn {
+            background: $light-success-color;
+            border-radius: 20px;
+            padding: 5px 25px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            margin-bottom: 15px;
+
+            span {
+              color: $seconary-color;
+              font-size: 14px;
             }
-            
-            .card-title {
-                color: $light-success-color;
-                font-size: 18px;
-                margin: 10px;
-            }
+          }
+
+          .card-title {
+            color: $light-success-color;
+            font-size: 18px;
+            margin: 10px;
+          }
         }
-    }
-    
-    .card-hover-content {
+      }
+
+      .card-hover-content {
         position: absolute;
         top: 125%;
         left: 0;
@@ -1916,31 +1931,31 @@ h6 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         .date-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            
-            span {
-                color: $white;
-                font-size: 16px;
-            }
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 20px;
+
+          span {
+            color: $white;
+            font-size: 16px;
+          }
         }
-        
+
         .hover-title {
-            color: $light-success-color;
-            font-size: 20px;
-            margin-bottom: 15px;
+          color: $light-success-color;
+          font-size: 20px;
+          margin-bottom: 15px;
         }
-        
+
         .hover-text {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 25px;
+          font-size: 14px;
+          line-height: 1.6;
+          margin-bottom: 25px;
         }
-        
+
         .more-btn {
           background: $white;
           border-radius: 20px;
@@ -1950,105 +1965,103 @@ h6 {
           gap: 8px;
           width: 32%;
           border: none;
-            
-            span {
-                color: $seconary-color;
-                font-size: 14px;
-            }
-            
-            .arrow-icon {
-                transition: transform 0.3s ease;
-            }
-            
-            &:hover .arrow-icon {
-                transform: translateX(5px);
-            }
+
+          span {
+            color: $seconary-color;
+            font-size: 14px;
+          }
+
+          .arrow-icon {
+            transition: transform 0.3s ease;
+          }
+
+          &:hover .arrow-icon {
+            transform: translateX(5px);
+          }
         }
-    }
-    
-    &:hover {
-        .card-overlay.initial {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        
-        .card-hover-content {
-            top: 0;
-        }
-        
-        .card-image {
-            transform: scale(1.05);
-        }
-    }
-    
-}
-
-// Swiper Styles
-.swiper-updates {
-    padding: 30px 0;
-    
-    .swiper-slide {
-        width: 521px;
-        height: 450px;
-    }
-    
-    .swiper-wrapper {
-        transition-timing-function: linear;
-    }
-}
-.controls-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-
-  .swiper-pagination {
-    position: static;
-    display: flex;
-    gap: 8px;
-    width: auto;
-
-    &-bullet {
-      background: #505e83;
-      width: 20px;
-      height: 8px;
-      border-radius: 4px;
-      opacity: 1;
-      transition: all 0.3s;
-
-      &-active {
-        background: $success-color !important;
-      }
-    }
-  }
-
-  .nav-buttons {
-    display: flex;
-    gap: 15px;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      position: static;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      margin: 0;
-      background: $success-color;
-      transition: all 0.3s;
-
-      &::after {
-        font-size: 16px;
-        color: $white;
       }
 
       &:hover {
-        transform: scale(1.1);
+        .card-overlay.initial {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        .card-hover-content {
+          top: 0;
+        }
+
+        .card-image {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    // Swiper Styles
+    .swiper-updates {
+      padding: 30px 0;
+
+      .swiper-slide {
+        width: 521px;
+        height: 450px;
+      }
+
+      .swiper-wrapper {
+        transition-timing-function: linear;
+      }
+    }
+    .controls-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+      .swiper-pagination {
+        position: static;
+        display: flex;
+        gap: 8px;
+        width: auto;
+
+        &-bullet {
+          background: #505e83;
+          width: 20px;
+          height: 8px;
+          border-radius: 4px;
+          opacity: 1;
+          transition: all 0.3s;
+
+          &-active {
+            background: $success-color !important;
+          }
+        }
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 15px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          position: static;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin: 0;
+          background: $success-color;
+          transition: all 0.3s;
+
+          &::after {
+            font-size: 16px;
+            color: $white;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
-}
-
-}
 
   // offers
   .new-systems-sections {
