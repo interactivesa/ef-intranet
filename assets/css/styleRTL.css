@@ -2634,3 +2634,14 @@ h6 {
 .main-content.light-mode .right-body .notification-section .info-boxes .info-box {
   border: 1px solid #F2EEE7;
 }
+.main-content.light-mode .right-body .new-updates-section .tabs-container .tab {
+  background: #EAECF8;
+}
+.main-content.light-mode .right-body .new-updates-section .tabs-container .tab.active {
+  background: #2A3886;
+  color: #FFFFFF;
+}
+.main-content.light-mode .right-body .new-updates-section .tabs-container .tab .event-count {
+  color: #2A3886;
+  background: #FFFFFF;
+}

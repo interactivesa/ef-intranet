@@ -3051,4 +3051,15 @@ h6 {
   .right-body .notification-section .info-boxes .info-box{
     border: 1px solid $Beige2-color;
   }
+  .right-body .new-updates-section .tabs-container .tab{
+    background: $bg-dropdown-nav;
+  }
+  .right-body .new-updates-section .tabs-container .tab.active{
+    background: $seconary-color;
+    color: $white;
+  }
+  .right-body .new-updates-section .tabs-container .tab .event-count{
+    color: $seconary-color;
+    background: $white;
+  }
 }
