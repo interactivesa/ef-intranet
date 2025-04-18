@@ -653,7 +653,7 @@ h6 {
   border-bottom-left-radius: 20px;
   padding: 12px 30px 0px 18px;
   width: 454px !important;
-  height: 2845px;
+  height: 2673px;
   overflow: hidden;
 }
 .left-body .meetings-section {
@@ -1146,6 +1146,8 @@ h6 {
 .right-body {
   flex: 1;
   min-width: 70%;
+  height: 2673px;
+  overflow: hidden;
   position: relative;
   padding: 4px 14px;
   background: #2A3886;
@@ -2586,4 +2588,49 @@ h6 {
 }
 .main-content.light-mode .section-title {
   color: #2A3886;
+}
+.main-content.light-mode .x-platform-section .platform-container .platform-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .new-systems-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .new-systems-section .section-header .view-all {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .new-updates-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .new-updates-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .new-updates-section .section-header .view-all {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section .section-header .view-all {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .poll-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .poll-section .section-header .view-all {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .poll-section .ratings .rating-item {
+  border: 1px solid #2A3886;
+}
+.main-content.light-mode .right-body .poll-section .ratings p {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .complaints-section .complaint-card {
+  background: #F2EEE7;
+}
+.main-content.light-mode .right-body .notification-section .main-notification {
+  background: #F2EEE7;
+}
+.main-content.light-mode .right-body .notification-section .info-boxes .info-box {
+  border: 1px solid #F2EEE7;
 }
