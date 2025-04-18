@@ -2,8 +2,6 @@
 body,
 html {
   width: 100%;
-  height: 2843px;
-  // overflow-x: hidden;
   background: $defult-color;
   margin-#{$start-direction}: 0px;
   font-family: "font-Reg";
@@ -520,7 +518,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin: 0 20px;
+  margin: 0px 25px 0px 83px;
   border-radius: 12px;
 
   .onboarding-img {
@@ -730,7 +728,7 @@ a {
         align-items: center;
         gap: 2px;
         background: transparent;
-        padding:0px;
+        padding: 0px;
         margin-bottom: 10px;
 
         img {
@@ -814,7 +812,7 @@ a {
   .meetings-list {
     .meeting-item {
       display: none;
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 5px;
       border-radius: 12px;
       margin: 10px 0px 0px 0px;
@@ -1285,7 +1283,7 @@ a {
     .right-body {
       width: 1347px !important;
     }
-    body{
+    body {
       width: 1801px;
       overflow: hidden;
     }
@@ -1349,7 +1347,7 @@ a {
         font-size: 14px;
         transition: color 0.3s;
 
-        p{
+        p {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -1553,7 +1551,7 @@ a {
         gap: 8px;
         transition: all 0.3s;
 
-        span{
+        span {
           font-size: 18px;
           font-family: $font-medium;
         }
@@ -1650,7 +1648,7 @@ a {
   /* Electronic Systems Section */
   .electronic-section {
     background: $bg-left-card;
-    width: 1299px;
+    width: 1150px;
     height: 263px;
     border-radius: 10px;
     padding: 15px;
@@ -1678,7 +1676,7 @@ a {
         cursor: pointer;
         transition: 0.3s;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
           color: $white;
@@ -1711,13 +1709,13 @@ a {
           top: 12px;
           left: 12px;
           z-index: 1;
-  
+
           .rating-star {
             font-size: 28px;
             cursor: pointer;
             color: $seconary-color;
             transition: all 0.2s;
-  
+
             &.active {
               color: $seconary-color;
               text-shadow: 0 0 8px rgba($seconary-color, 0.4);
@@ -1859,10 +1857,13 @@ a {
   }
   // New Updates Section
   .new-updates-section {
-    width: 1067px;
-    padding: 20px;
+    width: 1299px;
+    height: 784px;
+    overflow: hidden;
+    // padding: 20px;
     margin: 12px auto 0;
-    direction: rtl;
+    border-radius: 10px;
+    background: $bg-left-card;
 
     .section-header {
       display: flex;
@@ -1884,7 +1885,7 @@ a {
         color: $white;
         cursor: pointer;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -2148,10 +2149,13 @@ a {
     }
   }
   .new-systems-section {
-    width: 1067px;
-    padding: 20px;
+    width: 1299px;
+    height: 400px;
+    overflow: hidden;
     margin: 12px auto 0;
     direction: rtl;
+    background: $bg-left-card;
+    border-radius: 10px;
 
     .section-header {
       display: flex;
@@ -2173,7 +2177,7 @@ a {
         color: $white;
         cursor: pointer;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -2181,7 +2185,13 @@ a {
           width: 20px;
         }
       }
-    }}
+      img {
+        width: 1267px;
+        height: 322px;
+        overflow: hidden;
+      }
+    }
+  }
   // offers
   .new-systems-sections {
     background: $bg-left-card;
@@ -2212,7 +2222,7 @@ a {
         color: $white;
         cursor: pointer;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -2231,7 +2241,6 @@ a {
     }
   }
 
-  
   // library
   .dual-sections {
     display: grid;
@@ -2248,7 +2257,7 @@ a {
     background: $bg-left-card;
     border-radius: 12px;
     padding: 25px;
-    width: 522px;
+    width: 638px;
     height: 388px;
     overflow: hidden;
 
@@ -2273,7 +2282,7 @@ a {
         cursor: pointer;
         transition: opacity 0.3s;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -2594,7 +2603,7 @@ a {
       border-radius: 12px;
       padding: 30px;
       text-align: center;
-      width: 522px;
+      width: 638px;
       height: 188px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -2622,7 +2631,7 @@ a {
 
       .info-box {
         background: $white;
-        width: 255px;
+        width: 312px;
         height: 188px;
         overflow: hidden;
         border-radius: 12px;
@@ -2686,10 +2695,10 @@ a {
   }
 
   .poll-section {
-    background: #35428c;
+    background: $bg-left-card;
     border-radius: 12px;
     padding: 25px;
-    width: 522px;
+    width: 638px;
     height: 373px;
     overflow: hidden;
 
@@ -2713,7 +2722,7 @@ a {
         cursor: pointer;
         font-size: 16px;
 
-        span{
+        span {
           font-size: 16px;
           font-family: $font-medium;
         }
@@ -2829,7 +2838,7 @@ a {
       background: $white;
       border-radius: 12px;
       padding: 30px;
-      width: 522px;
+      width: 638px;
       height: 373px;
       overflow: hidden;
       display: flex;
@@ -2839,7 +2848,8 @@ a {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
       .complaint-image {
-        width: 150px;
+        width: 284px;
+        height: 211px;
         margin-bottom: 30px;
       }
 
@@ -3184,10 +3194,48 @@ a {
     color: $seconary-color;
     background: $white;
   }
-  .right-body .electronic-section{
+  .right-body .electronic-section {
     background: $white;
   }
-  .right-body .electronic-section .electronic-swiper .electronic-card{
+  .right-body .electronic-section .electronic-swiper .electronic-card {
+    border: 1px solid #C3C9EC;
+  }
+  .right-body .electronic-section .section-header .section-title {
+    color: $seconary-color;
+  }
+  .right-body .electronic-section .section-header .view-all span {
+    color: $seconary-color;
+  }
+  .right-body .files-section{
     border: 1px solid $Beige2-color;
+  }
+  .right-body .files-section .files-list .file-item{
+    background: $white;
+    color: $seconary-color;
+  }
+  .right-body .files-section .files-list .file-items{
+    background: #E2E3E5;
+    color: $seconary-color;
+  }
+  .right-body .files-section .files-list .file-item .file-category{
+    color: $seconary-color;
+  }
+  .right-body .files-section .files-list .file-item .file-count{
+    color: $seconary-color;
+  }
+  .right-body .electronic-section .section-header .view-all .arrow-icon{
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  }
+  .right-body .new-updates-section .section-header .view-all .arrow-icon{
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  }
+  .right-body .new-systems-section .section-header .view-all span{
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  }
+  .right-body .files-section .section-header .view-all .arrow-icon{
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  }
+  .right-body .poll-section .section-header .view-all span{
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
   }
 }

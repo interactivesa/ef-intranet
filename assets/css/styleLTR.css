@@ -72,7 +72,6 @@ a:hover {
 body,
 html {
   width: 100%;
-  height: 2843px;
   background: #1E285F;
   margin-left: 0px;
   font-family: "font-Reg";
@@ -511,7 +510,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin: 0 20px;
+  margin: 0px 25px 0px 83px;
   border-radius: 12px;
 }
 .qr-section .onboarding-img {
@@ -761,7 +760,7 @@ a {
 }
 .left-body .meetings-list .meeting-item {
   display: none;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 5px;
   border-radius: 12px;
   margin: 10px 0px 0px 0px;
@@ -1458,7 +1457,7 @@ a {
 }
 .right-body .electronic-section {
   background: #35428C;
-  width: 1299px;
+  width: 1150px;
   height: 263px;
   border-radius: 10px;
   padding: 15px;
@@ -1635,10 +1634,12 @@ a {
   }
 }
 .right-body .new-updates-section {
-  width: 1067px;
-  padding: 20px;
+  width: 1299px;
+  height: 784px;
+  overflow: hidden;
   margin: 12px auto 0;
-  direction: rtl;
+  border-radius: 10px;
+  background: #35428C;
 }
 .right-body .new-updates-section .section-header {
   display: flex;
@@ -1880,10 +1881,13 @@ a {
   transform: scale(1.1);
 }
 .right-body .new-systems-section {
-  width: 1067px;
-  padding: 20px;
+  width: 1299px;
+  height: 400px;
+  overflow: hidden;
   margin: 12px auto 0;
   direction: rtl;
+  background: #35428C;
+  border-radius: 10px;
 }
 .right-body .new-systems-section .section-header {
   display: flex;
@@ -1910,6 +1914,11 @@ a {
 }
 .right-body .new-systems-section .section-header .view-all .arrow-icon {
   width: 20px;
+}
+.right-body .new-systems-section .section-header img {
+  width: 1267px;
+  height: 322px;
+  overflow: hidden;
 }
 .right-body .new-systems-sections {
   background: #35428C;
@@ -1967,7 +1976,7 @@ a {
   background: #35428C;
   border-radius: 12px;
   padding: 25px;
-  width: 522px;
+  width: 638px;
   height: 388px;
   overflow: hidden;
 }
@@ -2256,7 +2265,7 @@ a {
   border-radius: 12px;
   padding: 30px;
   text-align: center;
-  width: 522px;
+  width: 638px;
   height: 188px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -2282,7 +2291,7 @@ a {
 }
 .right-body .notification-section .info-boxes .info-box {
   background: #FFFFFF;
-  width: 255px;
+  width: 312px;
   height: 188px;
   overflow: hidden;
   border-radius: 12px;
@@ -2330,10 +2339,10 @@ a {
   }
 }
 .right-body .poll-section {
-  background: #35428c;
+  background: #35428C;
   border-radius: 12px;
   padding: 25px;
-  width: 522px;
+  width: 638px;
   height: 373px;
   overflow: hidden;
 }
@@ -2453,7 +2462,7 @@ a {
   background: #FFFFFF;
   border-radius: 12px;
   padding: 30px;
-  width: 522px;
+  width: 638px;
   height: 373px;
   overflow: hidden;
   display: flex;
@@ -2463,7 +2472,8 @@ a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .right-body .complaints-section .complaint-card .complaint-image {
-  width: 150px;
+  width: 284px;
+  height: 211px;
   margin-bottom: 30px;
 }
 .right-body .complaints-section .complaint-card .complaint-btn {
@@ -2756,5 +2766,43 @@ a {
   background: #FFFFFF;
 }
 .main-content.light-mode .right-body .electronic-section .electronic-swiper .electronic-card {
+  border: 1px solid #C3C9EC;
+}
+.main-content.light-mode .right-body .electronic-section .section-header .section-title {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .electronic-section .section-header .view-all span {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section {
   border: 1px solid #F2EEE7;
+}
+.main-content.light-mode .right-body .files-section .files-list .file-item {
+  background: #FFFFFF;
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section .files-list .file-items {
+  background: #E2E3E5;
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section .files-list .file-item .file-category {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .files-section .files-list .file-item .file-count {
+  color: #2A3886;
+}
+.main-content.light-mode .right-body .electronic-section .section-header .view-all .arrow-icon {
+  filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+}
+.main-content.light-mode .right-body .new-updates-section .section-header .view-all .arrow-icon {
+  filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+}
+.main-content.light-mode .right-body .new-systems-section .section-header .view-all span {
+  filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+}
+.main-content.light-mode .right-body .files-section .section-header .view-all .arrow-icon {
+  filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+}
+.main-content.light-mode .right-body .poll-section .section-header .view-all span {
+  filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
 }
