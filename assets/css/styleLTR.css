@@ -1151,7 +1151,6 @@ h6 {
   background: #2A3886;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  /* ========== الأنظمة الإلكترونية ========== */
 }
 .right-body .top-bar {
   position: absolute;
@@ -1426,7 +1425,7 @@ h6 {
 }
 .right-body .new-systems-section {
   background: #35428C;
-  width: 1067px;
+  width: 1067px !important;
   height: 263px;
   overflow: hidden;
   border-radius: 10px;
@@ -1747,6 +1746,52 @@ h6 {
 }
 .right-body .new-updates-section .swiper-updates .swiper-wrapper {
   transition-timing-function: linear;
+}
+.right-body .new-updates-section .controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.right-body .new-updates-section .controls-container .swiper-pagination {
+  position: static;
+  display: flex;
+  gap: 8px;
+  width: auto;
+}
+.right-body .new-updates-section .controls-container .swiper-pagination-bullet {
+  background: #505e83;
+  width: 20px;
+  height: 8px;
+  border-radius: 4px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.right-body .new-updates-section .controls-container .swiper-pagination-bullet-active {
+  background: #AABC3A !important;
+}
+.right-body .new-updates-section .controls-container .nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-prev,
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-next {
+  position: static;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0;
+  background: #AABC3A;
+  transition: all 0.3s;
+}
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-prev::after,
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-next::after {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-prev:hover,
+.right-body .new-updates-section .controls-container .nav-buttons .swiper-button-next:hover {
+  transform: scale(1.1);
 }
 .right-body .new-systems-sections {
   background: #35428C;
