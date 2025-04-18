@@ -68,25 +68,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // tabs.js & swiper.js
 document.addEventListener("DOMContentLoaded", function () {
-  // تهيئة Swiper
-
-  // إدارة التبويبات
   const tabs = document.querySelectorAll(".tab");
   const slides = document.querySelectorAll(".swiper-slide");
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", function () {
-      // إزالة النشاط من جميع التبويبات
       tabs.forEach((t) => t.classList.remove("active"));
       this.classList.add("active");
 
-      // إخفاء جميع الشرائح
       slides.forEach((slide) => {
         slide.classList.remove("active");
         slide.style.display = "none";
       });
 
-      // عرض الشريحة المحددة
       const targetTab = this.dataset.tab;
       const activeSlides = document.querySelectorAll(
         `.swiper-slide[data-tab="${targetTab}"]`
@@ -97,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slide.style.display = "block";
       });
 
-      // تحديث Swiper
       swiper.update();
       swiper.slideTo(0);
     });
@@ -206,17 +199,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dayCards.forEach((card) => {
     card.addEventListener("click", function () {
-      // إزالة النشاط من جميع الأيام
       dayCards.forEach((c) => c.classList.remove("active"));
       this.classList.add("active");
 
-      // تحديث التاريخ المعروض
       selectedDate.textContent = this.dataset.date;
 
-      // إخفاء جميع الاجتماعات
       meetingItems.forEach((item) => item.classList.remove("active"));
 
-      // عرض الاجتماعات الخاصة باليوم المحدد
       const targetDay = this.dataset.day;
       document
         .querySelectorAll(`.meeting-item[data-day="${targetDay}"]`)
@@ -232,11 +221,10 @@ document.querySelectorAll(".rating-star").forEach((star) => {
     const isActive = this.dataset.rating === "true";
     this.dataset.rating = !isActive;
 
-    // إذا كنت تريد تغيير شكل النجمة عند التفعيل
     this.textContent = isActive ? "☆" : "★";
   });
 });
-// اشعار تقدير
+// notification.js
 document
   .getElementById("sendAppreciation")
   .addEventListener("click", function () {
@@ -247,7 +235,7 @@ document.querySelector(".close-btn").addEventListener("click", function () {
   document.getElementById("appreciationModal").style.display = "none";
 });
 
-// إغلاق النافذة عند النقر خارجها
+// closing the modal when clicking outside of it
 window.onclick = function (event) {
   const modal = document.getElementById("appreciationModal");
   if (event.target == modal) {
@@ -255,14 +243,14 @@ window.onclick = function (event) {
   }
 };
 
-// إغلاق النافذة بالزر Escape
+// escaping the modal
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     document.getElementById("appreciationModal").style.display = "none";
   }
 });
 
-// معالجة إرسال النموذج
+// sending appreciation form
 document
   .querySelector(".appreciation-form")
   .addEventListener("submit", function (e) {

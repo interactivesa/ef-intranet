@@ -2153,7 +2153,6 @@ a {
     height: 400px;
     overflow: hidden;
     margin: 12px auto 0;
-    direction: rtl;
     background: $bg-left-card;
     border-radius: 10px;
 
@@ -2310,7 +2309,6 @@ a {
         padding: 8px;
         border-radius: 8px;
         background: $lilac-color;
-        direction: rtl;
 
         .file-icon {
           width: 35px;
@@ -2377,7 +2375,6 @@ a {
       display: flex;
       gap: 10px;
       margin-bottom: 20px;
-      direction: rtl;
       justify-content: flex-start;
 
       .tab {
@@ -2453,7 +2450,6 @@ a {
           border-radius: 8px;
           font-size: 14px;
           transition: all 0.3s;
-          direction: rtl;
 
           &:focus {
             outline: none;
@@ -2468,7 +2464,6 @@ a {
         display: flex;
         gap: 8px;
         margin-bottom: 20px;
-        direction: rtl;
         justify-content: flex-start;
 
         .quick-btn {
@@ -2507,7 +2502,6 @@ a {
           resize: vertical;
           font-size: 14px;
           transition: all 0.3s;
-          direction: rtl;
 
           &:focus {
             outline: none;
@@ -2529,7 +2523,6 @@ a {
         transition: all 0.3s;
         position: relative;
         overflow: hidden;
-        direction: rtl;
 
         &:hover {
           background: $light-success-color;
@@ -3198,7 +3191,7 @@ a {
     background: $white;
   }
   .right-body .electronic-section .electronic-swiper .electronic-card {
-    border: 1px solid #C3C9EC;
+    border: 1px solid #c3c9ec;
   }
   .right-body .electronic-section .section-header .section-title {
     color: $seconary-color;
@@ -3206,36 +3199,41 @@ a {
   .right-body .electronic-section .section-header .view-all span {
     color: $seconary-color;
   }
-  .right-body .files-section{
+  .right-body .files-section {
     border: 1px solid $Beige2-color;
   }
-  .right-body .files-section .files-list .file-item{
+  .right-body .files-section .files-list .file-item {
     background: $white;
     color: $seconary-color;
   }
-  .right-body .files-section .files-list .file-items{
-    background: #E2E3E5;
+  .right-body .files-section .files-list .file-items {
+    background: #e2e3e5;
     color: $seconary-color;
   }
-  .right-body .files-section .files-list .file-item .file-category{
+  .right-body .files-section .files-list .file-item .file-category {
     color: $seconary-color;
   }
-  .right-body .files-section .files-list .file-item .file-count{
+  .right-body .files-section .files-list .file-item .file-count {
     color: $seconary-color;
   }
-  .right-body .electronic-section .section-header .view-all .arrow-icon{
-    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  .right-body .electronic-section .section-header .view-all .arrow-icon {
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg)
+      brightness(102%) contrast(105%);
   }
-  .right-body .new-updates-section .section-header .view-all .arrow-icon{
-    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  .right-body .new-updates-section .section-header .view-all .arrow-icon {
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg)
+      brightness(102%) contrast(105%);
   }
-  .right-body .new-systems-section .section-header .view-all span{
-    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  .right-body .new-systems-section .section-header .view-all span {
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg)
+      brightness(102%) contrast(105%);
   }
-  .right-body .files-section .section-header .view-all .arrow-icon{
-    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  .right-body .files-section .section-header .view-all .arrow-icon {
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg)
+      brightness(102%) contrast(105%);
   }
-  .right-body .poll-section .section-header .view-all span{
-    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg) brightness(102%) contrast(105%);
+  .right-body .poll-section .section-header .view-all span {
+    filter: invert(100%) sepia(16%) saturate(7023%) hue-rotate(188deg)
+      brightness(102%) contrast(105%);
   }
 }
