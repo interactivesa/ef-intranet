@@ -237,7 +237,6 @@ document.querySelectorAll(".rating-star").forEach((star) => {
   });
 });
 // اشعار تقدير
-// JavaScript
 document
   .getElementById("sendAppreciation")
   .addEventListener("click", function () {

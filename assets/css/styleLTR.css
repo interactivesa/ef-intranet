@@ -1153,6 +1153,8 @@ h6 {
   background: #2A3886;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  /* Electronic Systems Section */
+  /* Responsive Design */
 }
 .right-body .top-bar {
   position: absolute;
@@ -1425,92 +1427,103 @@ h6 {
     display: none;
   }
 }
-.right-body .new-systems-section {
+.right-body .electronic-section {
   background: #35428C;
-  width: 1067px !important;
+  width: 1067px;
   height: 263px;
-  overflow: hidden;
   border-radius: 10px;
-  padding: 9px 10px;
+  padding: 15px;
   margin-top: 17px;
+  position: relative;
+  overflow: hidden;
+  /* Swiper Container */
 }
-.right-body .new-systems-section .section-header {
+.right-body .electronic-section .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.right-body .new-systems-section .section-header .section-title {
+.right-body .electronic-section .section-header .section-title {
   color: #FFFFFF;
   font-size: 20px;
   margin: 0;
+  font-weight: 600;
 }
-.right-body .new-systems-section .section-header .view-all {
+.right-body .electronic-section .section-header .view-all {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: #FFFFFF;
+  gap: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
-.right-body .new-systems-section .section-header .view-all .arrow-icon {
-  width: 20px;
+.right-body .electronic-section .section-header .view-all span {
+  color: #FFFFFF;
+  font-size: 14px;
 }
-.right-body .new-systems-section .swiper-electronic {
-  padding: 0 50px;
-}
-.right-body .new-systems-section .swiper-electronic .swiper-slide {
-  width: auto !important;
-}
-.right-body .new-systems-section .swiper-electronic .system-card {
-  background: #FFFFFF;
-  border-radius: 16px;
-  padding: 15px;
-  text-align: center;
-  width: 220px;
-  height: 150px;
-  margin: 0 15px;
-  position: relative;
+.right-body .electronic-section .section-header .view-all .arrow-icon {
+  width: 18px;
+  filter: brightness(0) invert(1);
   transition: transform 0.3s;
 }
-.right-body .new-systems-section .swiper-electronic .system-card .rating-container {
+.right-body .electronic-section .electronic-swiper {
+  padding: 0 40px;
+  /* Electronic Card */
+  /* Controls */
+}
+.right-body .electronic-section .electronic-swiper .electronic-card {
+  background: #FFFFFF;
+  width: 252px;
+  height: 133px;
+  border-radius: 16px;
+  padding: 4px 10px 0px 10px;
+  position: relative;
+  cursor: pointer;
+}
+.right-body .electronic-section .electronic-swiper .electronic-card .rating-container {
   position: absolute;
   top: 12px;
   left: 12px;
   z-index: 1;
 }
-.right-body .new-systems-section .swiper-electronic .system-card .rating-container .rating-star {
+.right-body .electronic-section .electronic-swiper .electronic-card .rating-container .rating-star {
   font-size: 28px;
   cursor: pointer;
   color: #2A3886;
   transition: all 0.2s;
 }
-.right-body .new-systems-section .swiper-electronic .system-card .rating-container .rating-star.active {
+.right-body .electronic-section .electronic-swiper .electronic-card .rating-container .rating-star.active {
   color: #2A3886;
   text-shadow: 0 0 8px rgba(42, 56, 134, 0.4);
 }
-.right-body .new-systems-section .swiper-electronic .system-card .system-icon {
+.right-body .electronic-section .electronic-swiper .electronic-card .electronic-icon {
   width: 50px;
   height: 50px;
-  margin: 20px auto 15px;
+  margin: 25px auto 15px;
+  display: block;
+  object-fit: contain;
 }
-.right-body .new-systems-section .swiper-electronic .system-card h3 {
+.right-body .electronic-section .electronic-swiper .electronic-card h3 {
   color: #2A3886;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container {
+.right-body .electronic-section .electronic-swiper .electronic-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .swiper-pagination {
+.right-body .electronic-section .electronic-swiper .electronic-controls .swiper-pagination {
   position: static;
   display: flex;
   gap: 8px;
   width: auto;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .swiper-pagination-bullet {
+.right-body .electronic-section .electronic-swiper .electronic-controls .swiper-pagination-bullet {
   background: #505e83;
   width: 20px;
   height: 8px;
@@ -1518,15 +1531,16 @@ h6 {
   opacity: 1;
   transition: all 0.3s;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .swiper-pagination-bullet-active {
+.right-body .electronic-section .electronic-swiper .electronic-controls .swiper-pagination-bullet-active {
   background: #AABC3A !important;
+  width: 30px;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons {
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-prev,
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-next {
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-prev,
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-next {
   position: static;
   width: 35px;
   height: 35px;
@@ -1534,35 +1548,61 @@ h6 {
   margin: 0;
   background: #AABC3A;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-prev::after,
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-next::after {
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-prev::after,
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-next::after {
   font-size: 16px;
   color: #FFFFFF;
+  font-weight: 700;
 }
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-prev:hover,
-.right-body .new-systems-section .swiper-electronic .controls-container .nav-buttons .swiper-button-next:hover {
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-prev:hover,
+.right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-next:hover {
   transform: scale(1.1);
+  background: #87952e;
 }
-@media (max-width: 992px) {
-  .right-body .new-systems-section {
-    padding: 20px;
+@media (max-width: 1200px) {
+  .right-body .electronic-section {
+    width: 95% !important;
+    height: auto;
+    padding-bottom: 30px;
   }
-  .right-body .new-systems-section .swiper-electronic {
+  .right-body .electronic-section .electronic-swiper {
     padding: 0 30px;
   }
-  .right-body .new-systems-section .swiper-electronic .system-card {
-    width: 260px;
-    height: 120px;
+  .right-body .electronic-section .electronic-swiper .electronic-card {
+    width: 220px !important;
+    height: 120px !important;
   }
-  .right-body .new-systems-section .swiper-electronic .system-card h3 {
-    font-size: 16px;
+  .right-body .electronic-section .electronic-swiper .electronic-card h3 {
+    font-size: 15px;
   }
 }
 @media (max-width: 768px) {
-  .right-body .new-systems-section .controls-container {
+  .right-body .electronic-section .electronic-swiper {
+    padding: 0 20px;
+  }
+  .right-body .electronic-section .electronic-swiper .electronic-controls {
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
+  }
+  .right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav {
+    order: -1;
+  }
+  .right-body .electronic-section .electronic-swiper .electronic-card {
+    width: 200px !important;
+    height: 110px !important;
+  }
+  .right-body .electronic-section .electronic-swiper .electronic-card .electronic-icon {
+    margin: 15px auto 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .right-body .electronic-section .electronic-swiper .electronic-card h3 {
+    font-size: 14px;
   }
 }
 .right-body .new-updates-section {
@@ -2644,4 +2684,10 @@ h6 {
 .main-content.light-mode .right-body .new-updates-section .tabs-container .tab .event-count {
   color: #2A3886;
   background: #FFFFFF;
+}
+.main-content.light-mode .right-body .electronic-section {
+  background: #FFFFFF;
+}
+.main-content.light-mode .right-body .electronic-section .electronic-swiper .electronic-card {
+  border: 1px solid #F2EEE7;
 }
