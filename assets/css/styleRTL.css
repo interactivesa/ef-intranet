@@ -81,18 +81,10 @@ a {
   text-decoration: unset;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-}
-
 .sidenav {
   width: 300px;
-  height: 100vh;
+  height: 935px;
+  overflow: hidden;
   transition: all 0.3s ease;
   position: fixed;
   right: 0;
@@ -197,7 +189,9 @@ h6 {
   position: relative;
 }
 .sidenav-header .logo-container .logo {
-  width: 260px;
+  width: 300px;
+  height: 64px;
+  overflow: hidden;
   transition: all 0.3s;
 }
 .sidenav-header .logo-container .logo.collapsed-logo {
@@ -239,7 +233,6 @@ h6 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 28px;
-  font-weight: bold;
 }
 .onboarding-popup .popup-text, .right-body .complaint-popup .popup-text {
   color: #373f48;
@@ -272,7 +265,6 @@ h6 {
 .onboarding-popup .stepper .step.active .step-label, .right-body .complaint-popup .stepper .step.active .step-label {
   color: #2A3886;
   font-size: 16px;
-  font-weight: bold;
 }
 .onboarding-popup .stepper .step.active .step-label span, .right-body .complaint-popup .stepper .step.active .step-label span {
   color: rgba(42, 56, 134, 0.8);
@@ -333,7 +325,6 @@ h6 {
 .onboarding-popup .content-step h3, .right-body .complaint-popup .content-step h3 {
   color: #2A3886;
   font-size: 16px;
-  font-weight: bold;
   padding-right: 15px;
   margin: 0 0 5px 0px;
 }
@@ -395,12 +386,13 @@ h6 {
 }
 
 .time-info {
-  width: calc(100% - 33px);
+  width: 300px;
   height: 59px;
-  padding: 15px;
+  overflow: hidden;
+  padding: 10px;
   background: #30396C;
   border-radius: 8px;
-  margin: 8px 17px 20px;
+  margin: 8px 0px 14px;
   display: flex;
   align-items: center;
 }
@@ -418,21 +410,22 @@ h6 {
 }
 .time-info .time-item span:first-of-type {
   color: #BDCD5C;
-  font-weight: bold;
   font-size: 18px;
+  font-family: "font-SimiBold";
 }
 .time-info .time-item span:first-of-type::after {
   content: "وقت الحضور";
   display: block;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: normal;
+  font-family: "font-regular";
 }
 .time-info .time-item span:last-of-type {
   color: #FFFFFF;
   position: relative;
   padding-right: 20px;
   font-size: 16px;
+  font-family: "font-SimiBold";
 }
 .time-info .time-item span:last-of-type::before {
   content: "";
@@ -448,7 +441,7 @@ h6 {
 .menu-list {
   list-style: none;
   padding: 0;
-  margin: 15px 0 30px;
+  margin: 35px 0 24px;
 }
 .menu-list li {
   position: relative;
@@ -460,6 +453,7 @@ h6 {
   transition: all 0.3s ease;
   color: #8e93af;
   font-size: 20px;
+  font-family: "font-regular";
   overflow: visible;
 }
 .menu-list li::before {
@@ -521,23 +515,28 @@ h6 {
 }
 .qr-section .onboarding-img {
   width: 48px;
+  height: 48px;
+  overflow: hidden;
   order: 1;
 }
 .qr-section .qr-img {
-  width: 90px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
   order: 2;
 }
 .qr-section .app-btn {
   order: 3;
   width: 160px;
-  padding: 12px;
+  height: 40px;
+  overflow: hidden;
   font-size: 16px;
+  font-family: "font-medium";
   background: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 600;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -546,19 +545,20 @@ h6 {
 
 .user-card {
   position: relative;
-  margin: 0 13px 6px;
+  margin: 0 0px 6px;
 }
 .user-card .profile-card {
   position: relative;
-  width: 100%;
+  width: 300px;
   height: 144px;
   overflow: hidden;
   border-radius: 12px;
 }
 .user-card .profile-card .middle-section {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 144px;
+  overflow: hidden;
   background: #BDCD5C;
 }
 .user-card .profile-card .top-section {
@@ -593,19 +593,31 @@ h6 {
 }
 .user-card .profile-card .content .user-info {
   color: #FFFFFF;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .user-card .profile-card .content .user-info h3 {
   margin: 0;
   font-size: 16px;
+  font-family: "font-SimiBold";
   line-height: 1.3;
-  font-weight: bold;
 }
-.user-card .profile-card .content .user-info p {
+.user-card .profile-card .content .user-info .p-user-1 {
   margin: 3px 0;
   font-size: 14px;
+  font-family: "font-medium";
   text-align: center;
-  font-weight: 500;
+}
+.user-card .profile-card .content .user-info .p-user-2 {
+  margin: 3px 0;
+  font-size: 14px;
+  font-family: "font-regular";
+  text-align: center;
+}
+.user-card .profile-card .content .user-info .p-user-3 {
+  margin: 3px 0;
+  font-size: 14px;
+  font-family: "font-medium";
+  text-align: center;
 }
 .user-card .profile-card:hover .middle-section {
   background: transparent;
@@ -673,7 +685,6 @@ h6 {
 .left-body .meetings-section .header-row .meetings-title {
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: bold;
 }
 .left-body .meetings-section .header-row .meeting {
   display: flex;
@@ -733,7 +744,6 @@ h6 {
   display: block;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 600;
 }
 .left-body .days-container .day-card:hover {
   background: #FFFFFF;
@@ -771,7 +781,6 @@ h6 {
 .left-body .meetings-list .meeting-item .meeting-title {
   color: #2A3886;
   font-size: 16px;
-  font-weight: bold;
 }
 .left-body .meetings-list .meeting-item .meeting-location {
   display: flex;
@@ -802,14 +811,12 @@ h6 {
 .employee-directory .directory-container .directory-title {
   color: #2A3886;
   font-size: 20px;
-  font-weight: bold;
   margin: 10px 0px 15px 0px;
 }
 .employee-directory .directory-container .directory-subtitle {
   color: rgba(42, 56, 134, 0.8);
   font-size: 16px;
   margin-bottom: 18px;
-  font-weight: 600;
 }
 .employee-directory .directory-container .search-box {
   background: #FFFFFF;
@@ -845,7 +852,6 @@ h6 {
   padding: 6px;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
   -webkit-border-radius: 50px;
@@ -870,7 +876,6 @@ h6 {
   font-size: 20px;
   margin-bottom: 15px;
   text-align: right;
-  font-weight: bold;
 }
 .important-announcement .announcement-container .announcement-image {
   width: 406px;
@@ -907,7 +912,6 @@ h6 {
 .official-holidays .holidays-title {
   color: #FFFFFF;
   font-size: 20px;
-  font-weight: bold;
   margin-bottom: 18px;
   text-align: right;
 }
@@ -926,7 +930,6 @@ h6 {
 .official-holidays .holiday-item .holiday-info .holiday-name {
   color: #2A3886;
   margin-bottom: 8px;
-  font-weight: bold;
   font-size: 16px;
 }
 .official-holidays .holiday-item .holiday-info .holiday-date {
@@ -942,7 +945,6 @@ h6 {
 .official-holidays .holiday-item .holiday-info .holiday-date span {
   color: #FFFFFF;
   font-size: 12px;
-  font-weight: 600;
 }
 .official-holidays .holiday-item .days-counter {
   background: transparent;
@@ -951,7 +953,6 @@ h6 {
   padding: 9px 23px;
   border-radius: 20px;
   font-size: 14px;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -992,7 +993,6 @@ h6 {
 }
 .calendar-section .calendar-container .calendar-header .header-right span {
   font-size: 20px;
-  font-weight: bold;
   color: #2A3886;
 }
 .calendar-section .calendar-container .calendar-header .header-right span.year {
@@ -1006,7 +1006,6 @@ h6 {
 .calendar-section .calendar-container .calendar-header .header-left .month {
   color: #2A3886;
   font-size: 16px;
-  font-weight: 500;
 }
 .calendar-section .calendar-container .calendar-header .header-left .dropdown-arrow {
   width: 18px;
@@ -1049,7 +1048,6 @@ h6 {
 }
 .calendar-section .calendar-container .dates-grid .date-cell.event-date {
   color: #FFFFFF;
-  font-weight: 600;
   background-color: #BDCD5C;
 }
 .calendar-section .calendar-container .dates-grid .date-cell.event-date:hover {
@@ -1104,7 +1102,6 @@ h6 {
   font-size: 20px;
   margin-bottom: 14px;
   text-align: right;
-  font-weight: 600;
 }
 .x-platform-section .platform-container .platform-image {
   width: 406px;
@@ -1182,7 +1179,6 @@ h6 {
 }
 .right-body .top-bar .left-section .time {
   font-size: 16px;
-  font-weight: 500;
 }
 .right-body .top-bar .center-section {
   display: flex;
@@ -1343,7 +1339,6 @@ h6 {
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
-  font-weight: 500;
   font-size: 16px;
   font-family: "font-medium";
 }
@@ -1448,7 +1443,6 @@ h6 {
   color: #FFFFFF;
   font-size: 20px;
   margin: 0;
-  font-weight: 600;
 }
 .right-body .electronic-section .section-header .view-all {
   display: flex;
@@ -1508,7 +1502,6 @@ h6 {
   font-size: 16px;
   margin: 0;
   line-height: 1.4;
-  font-weight: 700;
   text-align: center;
 }
 .right-body .electronic-section .electronic-swiper .electronic-controls {
@@ -1556,7 +1549,6 @@ h6 {
 .right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-next::after {
   font-size: 16px;
   color: #FFFFFF;
-  font-weight: 700;
 }
 .right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-prev:hover,
 .right-body .electronic-section .electronic-swiper .electronic-controls .electronic-nav .swiper-button-next:hover {
@@ -1946,12 +1938,10 @@ h6 {
 }
 .right-body .files-section .files-list .file-item .file-category {
   color: #FFFFFF;
-  font-weight: 500;
   font-size: 16px;
 }
 .right-body .files-section .files-list .file-item .file-count {
   color: #FFFFFF;
-  font-weight: bold;
   padding: 4px 12px;
   border-radius: 20px;
   margin-right: auto;
@@ -1992,7 +1982,6 @@ h6 {
   font-size: 20px;
   text-align: center;
   margin: 0 0 25px 0;
-  font-weight: bold;
 }
 .right-body .appreciation-modal .notification-tabs {
   display: flex;
@@ -2123,7 +2112,6 @@ h6 {
   border: none;
   border-radius: 35px;
   cursor: pointer;
-  font-weight: bold;
   font-size: 16px;
   transition: all 0.3s;
   position: relative;
@@ -2197,7 +2185,6 @@ h6 {
   color: #2A3886;
   margin: 0;
   font-size: 18px;
-  font-weight: bold;
 }
 .right-body .notification-section .info-boxes {
   display: grid;
@@ -2227,7 +2214,6 @@ h6 {
 }
 .right-body .notification-section .info-boxes .info-box span {
   color: #121838;
-  font-weight: bold;
   font-size: 18px;
 }
 @media (max-width: 768px) {
@@ -2276,7 +2262,6 @@ h6 {
 .right-body .poll-section .section-header .section-title {
   color: #FFFFFF;
   font-size: 20px;
-  font-weight: bold;
 }
 .right-body .poll-section .section-header .view-all {
   display: flex;
@@ -2298,7 +2283,6 @@ h6 {
 .right-body .poll-section .ratings p {
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: bold;
   margin-bottom: 0px;
 }
 .right-body .poll-section .ratings .rating-item {
@@ -2336,7 +2320,6 @@ h6 {
 }
 .right-body .poll-section .ratings .rating-item .label {
   color: #2A3886;
-  font-weight: 500;
 }
 .right-body .poll-section .poll-buttons {
   display: flex;
@@ -2347,14 +2330,12 @@ h6 {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
 }
 .right-body .poll-section .poll-buttons .vote-btn {
   background: #2A3886;
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: 500;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -2369,7 +2350,6 @@ h6 {
   background: #FFFFFF;
   color: #2A3886;
   font-size: 18px;
-  font-weight: 500;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -2403,7 +2383,6 @@ h6 {
   padding: 12px 40px;
   border: none;
   border-radius: 25px;
-  font-weight: bold;
   font-size: 18px;
   cursor: pointer;
   transition: all 0.3s;
@@ -2483,7 +2462,6 @@ h6 {
 .right-body .complaint-popup .sender-info {
   text-align: right;
   color: #2A3886;
-  font-weight: bold;
   font-size: 16px;
   margin: 50px 0px 0px 0px;
 }
